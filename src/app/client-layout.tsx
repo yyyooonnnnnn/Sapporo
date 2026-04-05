@@ -11,7 +11,7 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       {/* Header */}
-      <header className="hk-header sticky top-0 z-40 relative">
+      <header className="hk-header sticky top-0 z-40">
         <div className="mx-auto flex h-13 max-w-md items-center justify-between px-4 py-2.5">
           <div className="flex items-center gap-2.5">
             {/* Mountain silhouette icon via CSS */}
@@ -33,12 +33,6 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
           </div>
           <FontSizeToggle />
         </div>
-        {/* Lavender-to-sky gradient accent line */}
-        <div
-          className="absolute bottom-0 left-0 right-0 h-0.5"
-          style={{ background: "linear-gradient(90deg, #7C6DAF 0%, #87CEEB 50%, #7C6DAF 100%)", opacity: 0.65 }}
-          aria-hidden="true"
-        />
       </header>
 
       {/* Main content */}

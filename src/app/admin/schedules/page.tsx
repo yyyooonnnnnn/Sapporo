@@ -24,6 +24,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { schedules as initialSchedules } from "@/lib/data";
 import type { Schedule } from "@/lib/types";
+import { AdminGuard } from "@/components/admin-guard";
 
 const CATEGORIES: Schedule["category"][] = [
   "식당",
@@ -33,6 +34,8 @@ const CATEGORIES: Schedule["category"][] = [
   "이동",
   "디저트",
   "체험",
+  "온천",
+  "숙소",
 ];
 
 export default function AdminSchedulesPage() {
@@ -109,6 +112,7 @@ export default function AdminSchedulesPage() {
   );
 
   return (
+    <AdminGuard>
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -275,6 +279,7 @@ export default function AdminSchedulesPage() {
                         <Button
                           variant="ghost"
                           size="icon-xs"
+                          aria-label="수정"
                           onClick={() => handleEdit(schedule)}
                         >
                           <Pencil className="size-3" />
@@ -282,6 +287,7 @@ export default function AdminSchedulesPage() {
                         <Button
                           variant="ghost"
                           size="icon-xs"
+                          aria-label="삭제"
                           onClick={() => handleDelete(schedule.id)}
                         >
                           <Trash2 className="size-3 text-destructive" />
@@ -295,5 +301,6 @@ export default function AdminSchedulesPage() {
           </div>
         ))}
     </div>
+    </AdminGuard>
   );
 }

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Map, List, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { RestaurantCard } from "@/components/restaurant-card";
 import { PlaceDetailSheet } from "@/components/place-detail-sheet";
 import { getRestaurants } from "@/lib/data";
@@ -39,6 +38,7 @@ export default function RestaurantsPage() {
           <Button
             variant={view === "list" ? "default" : "outline"}
             size="icon-sm"
+            aria-label="목록 보기"
             onClick={() => setView("list")}
           >
             <List className="size-4" />
@@ -46,6 +46,7 @@ export default function RestaurantsPage() {
           <Button
             variant={view === "map" ? "default" : "outline"}
             size="icon-sm"
+            aria-label="지도 보기"
             onClick={() => setView("map")}
           >
             <Map className="size-4" />
@@ -56,14 +57,17 @@ export default function RestaurantsPage() {
       {/* Category filter */}
       <div className="flex gap-2">
         {CATEGORIES.map((cat) => (
-          <Badge
+          <button
             key={cat}
-            variant={filter === cat ? "default" : "outline"}
-            className="cursor-pointer"
             onClick={() => setFilter(cat)}
+            className={
+              filter === cat
+                ? "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-transparent bg-primary text-primary-foreground"
+                : "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
+            }
           >
             {cat}
-          </Badge>
+          </button>
         ))}
       </div>
 

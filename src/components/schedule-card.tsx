@@ -80,6 +80,18 @@ export function ScheduleCard({ schedule, isLast, onClick }: ScheduleCardProps) {
           boxShadow: "0 1px 4px rgba(124,109,175,0.07), 0 2px 8px rgba(124,109,175,0.04)",
         }}
         onClick={schedule.place_id ? onClick : undefined}
+        {...(schedule.place_id
+          ? {
+              role: "button",
+              tabIndex: 0,
+              onKeyDown: (e: React.KeyboardEvent) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  onClick?.();
+                }
+              },
+            }
+          : {})}
       >
         <div className="flex items-center gap-2">
           <span className="text-sm font-semibold" style={{ color: config.dotColor }}>

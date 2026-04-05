@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/select";
 import { places as initialPlaces } from "@/lib/data";
 import type { Place } from "@/lib/types";
+import { AdminGuard } from "@/components/admin-guard";
 
 const CATEGORIES: Place["category"][] = [
   "식당",
@@ -26,6 +27,9 @@ const CATEGORIES: Place["category"][] = [
   "쇼핑",
   "디저트",
   "체험",
+  "온천",
+  "숙소",
+  "이동",
 ];
 
 export default function AdminPlacesPage() {
@@ -121,6 +125,7 @@ export default function AdminPlacesPage() {
   }
 
   return (
+    <AdminGuard>
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -361,6 +366,7 @@ export default function AdminPlacesPage() {
                 <Button
                   variant="ghost"
                   size="icon-xs"
+                  aria-label="수정"
                   onClick={() => handleEdit(place)}
                 >
                   <Pencil className="size-3" />
@@ -368,6 +374,7 @@ export default function AdminPlacesPage() {
                 <Button
                   variant="ghost"
                   size="icon-xs"
+                  aria-label="삭제"
                   onClick={() => handleDelete(place.id)}
                 >
                   <Trash2 className="size-3 text-destructive" />
@@ -378,5 +385,6 @@ export default function AdminPlacesPage() {
         ))}
       </div>
     </div>
+    </AdminGuard>
   );
 }

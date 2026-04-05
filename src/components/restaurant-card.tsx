@@ -53,6 +53,14 @@ export function RestaurantCard({ place, onClick }: RestaurantCardProps) {
       className="cursor-pointer overflow-hidden transition-all duration-200 hover:shadow-lg active:scale-[0.99]"
       style={{ boxShadow: "0 1px 4px rgba(124,109,175,0.08), 0 4px 16px rgba(124,109,175,0.05)" }}
       onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e: React.KeyboardEvent) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}
     >
       {/* Photo placeholder with warm gradient */}
       <div

@@ -60,9 +60,6 @@ export default function SchedulePage() {
                 key={day}
                 value={String(day)}
                 className="flex-1 rounded-xl py-2 transition-all duration-200 data-[state=active]:shadow-sm"
-                style={{
-                  "--tw-data-active-bg": "white",
-                } as React.CSSProperties}
               >
                 <div className="flex flex-col items-center gap-0.5">
                   <span className="text-xs font-bold">Day {day}</span>

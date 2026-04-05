@@ -10,6 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { flights as initialFlights } from "@/lib/data";
 import type { Flight } from "@/lib/types";
+import { AdminGuard } from "@/components/admin-guard";
 
 export default function AdminFlightsPage() {
   const [flightList, setFlightList] = useState<Flight[]>(initialFlights);
@@ -28,6 +29,7 @@ export default function AdminFlightsPage() {
   }
 
   return (
+    <AdminGuard>
     <div className="space-y-4">
       <div className="flex items-center gap-2">
         <Link href="/admin" className="inline-flex items-center justify-center size-8 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
@@ -196,5 +198,6 @@ export default function AdminFlightsPage() {
         {saved ? "저장 완료!" : "변경사항 저장"}
       </Button>
     </div>
+    </AdminGuard>
   );
 }
