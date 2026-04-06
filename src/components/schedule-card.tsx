@@ -110,7 +110,7 @@ export function ScheduleCard({ schedule, isLast, onClick }: ScheduleCardProps) {
           </Badge>
         </div>
         <h3 className="mt-1 font-semibold leading-snug">{schedule.title}</h3>
-        <p className="mt-0.5 text-sm text-muted-foreground leading-relaxed">
+        <p className="mt-0.5 text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
           {schedule.description}
         </p>
         {schedule.place_id && (
