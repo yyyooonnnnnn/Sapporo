@@ -49,7 +49,7 @@ export default function SchedulePage() {
       <Tabs defaultValue={String(defaultDay)}>
         {/* Day tabs */}
         <TabsList
-          className="w-full h-auto p-1 gap-1"
+          className="w-full !h-auto p-1 gap-1"
           style={{ background: "var(--lavender-light)", borderRadius: "0.875rem" }}
         >
           {DAYS.map((day) => {
