@@ -41,6 +41,7 @@ export interface Place {
   phone?: string;
   website?: string;
   opening_hours?: string[];
+  reference_links?: { label: string; url: string; type: "youtube" | "blog" | "naver" }[];
 }
 
 export interface Flight {

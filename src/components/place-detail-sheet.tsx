@@ -17,6 +17,9 @@ import {
   Globe,
   Clock,
   Navigation,
+  Play,
+  ArrowUpRight,
+  FileText,
 } from "lucide-react";
 import { ImageCarousel } from "@/components/image-carousel";
 import type { Place } from "@/lib/types";
@@ -191,6 +194,37 @@ export function PlaceDetailSheet({
                       >
                         &ldquo;{review}&rdquo;
                       </div>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* Reference Links */}
+            {place.reference_links && place.reference_links.length > 0 && (
+              <>
+                <Separator />
+                <div>
+                  <h4 className="mb-2 font-semibold">참고 영상 / 후기</h4>
+                  <div className="space-y-2">
+                    {place.reference_links.map((link, i) => (
+                      <a
+                        key={i}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 rounded-lg border p-3 text-sm transition-colors hover:bg-accent"
+                      >
+                        {link.type === "youtube" ? (
+                          <Play className="size-5 shrink-0 text-red-500" />
+                        ) : link.type === "naver" ? (
+                          <FileText className="size-5 shrink-0 text-green-500" />
+                        ) : (
+                          <Globe className="size-5 shrink-0 text-blue-500" />
+                        )}
+                        <span className="flex-1 font-medium">{link.label}</span>
+                        <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground" />
+                      </a>
                     ))}
                   </div>
                 </div>
