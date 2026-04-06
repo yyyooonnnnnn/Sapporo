@@ -200,7 +200,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1557872943-16a5ac26587e?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop",
     ],
   },
   {
@@ -248,7 +248,7 @@ export const places: Place[] = [
     website: "https://www.kinotoya.com",
     location_tags: ["삿포로 시내", "Day 1"],
     photos: [
-      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
     ],
@@ -275,7 +275,7 @@ export const places: Place[] = [
     website: "https://www.farm-tomita.co.jp",
     location_tags: ["팜 토미타", "후라노", "Day 2"],
     photos: [
-      "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
     ],
@@ -299,7 +299,7 @@ export const places: Place[] = [
     opening_hours: ["매일 09:00 - 17:00 (11-4월 단축 운영)"],
     location_tags: ["후라노", "Day 2"],
     photos: [
-      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
     ],
@@ -327,7 +327,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1557872943-16a5ac26587e?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop",
     ],
   },
 
@@ -377,7 +377,7 @@ export const places: Place[] = [
     location_tags: ["신치토세 공항", "Day 4"],
     photos: [
       "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1606312619070-d48b4c652e52?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=300&fit=crop",
     ],
   },
@@ -559,7 +559,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
     ],
   },
 
@@ -636,7 +636,7 @@ export const places: Place[] = [
     location_tags: ["삿포로역", "삿포로 시내", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1606312619070-d48b4c652e52?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
     ],
   },
@@ -661,7 +661,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
     ],
   },
   {
@@ -685,7 +685,7 @@ export const places: Place[] = [
     location_tags: ["삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1606312619070-d48b4c652e52?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
     ],
   },
@@ -817,7 +817,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
     ],
   },
   {
@@ -916,7 +916,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1557872943-16a5ac26587e?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop",
     ],
   },
   {
@@ -940,7 +940,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1557872943-16a5ac26587e?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop",
     ],
   },
 
@@ -1070,7 +1070,7 @@ export const places: Place[] = [
     opening_hours: ["매일 08:00 - 20:00"],
     location_tags: ["신치토세 공항", "Day 4"],
     photos: [
-      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop",
     ],
@@ -1123,7 +1123,7 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
     ],
   },
 
@@ -1349,7 +1349,7 @@ export const places: Place[] = [
     opening_hours: ["매일 10:00 - 18:00"],
     location_tags: ["삿포로역", "Day 3"],
     photos: [
-      "https://images.unsplash.com/photo-1486427944544-d2cf4cb04f23?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
     ],
   },
   {
@@ -1439,7 +1439,7 @@ export const places: Place[] = [
     opening_hours: ["매일 09:00 - 17:00"],
     location_tags: ["노보리베츠", "Day 3", "Day 4"],
     photos: [
-      "https://images.unsplash.com/photo-1570197788417-0e82375c9ca7?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400&h=300&fit=crop",
     ],
   },
 
