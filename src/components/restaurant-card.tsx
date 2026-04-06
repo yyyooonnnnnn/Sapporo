@@ -10,11 +10,12 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { ImageCarousel } from "@/components/image-carousel";
-import type { Place } from "@/lib/types";
+import type { Place, OpeningStatus } from "@/lib/types";
 
 interface RestaurantCardProps {
   place: Place;
   onClick?: () => void;
+  openingStatus?: OpeningStatus;
 }
 
 function PriceLevel({ level }: { level: number }) {
@@ -46,12 +47,13 @@ const categoryEmoji: Record<string, string> = {
   이동:  "🚂",
 };
 
-export function RestaurantCard({ place, onClick }: RestaurantCardProps) {
+export function RestaurantCard({ place, onClick, openingStatus }: RestaurantCardProps) {
   const emoji = categoryEmoji[place.category] ?? "📍";
+  const isClosed = openingStatus?.isClosed ?? false;
 
   return (
     <Card
-      className="cursor-pointer overflow-hidden transition-all duration-200 hover:shadow-lg active:scale-[0.99]"
+      className={`cursor-pointer overflow-hidden transition-all duration-200 hover:shadow-lg active:scale-[0.99]${isClosed ? " opacity-50" : ""}`}
       style={{ boxShadow: "0 1px 4px rgba(124,109,175,0.08), 0 4px 16px rgba(124,109,175,0.05)" }}
       onClick={onClick}
       role="button"
@@ -80,12 +82,20 @@ export function RestaurantCard({ place, onClick }: RestaurantCardProps) {
             </div>
           </div>
         )}
-        {place.recommendation_reason && (
+        {place.recommendation_reason && !isClosed && (
           <Badge
             className="absolute top-2 left-2 max-w-[200px] truncate text-[10px]"
             style={{ background: "var(--lavender)", color: "#fff", border: "none" }}
           >
             {place.recommendation_reason}
+          </Badge>
+        )}
+        {isClosed && (
+          <Badge
+            className="absolute top-2 right-2 text-[10px]"
+            style={{ background: "#ef4444", color: "#fff", border: "none" }}
+          >
+            휴무
           </Badge>
         )}
       </div>

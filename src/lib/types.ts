@@ -75,3 +75,19 @@ export interface Accommodation {
   phone?: string;
   nearby_facilities?: string[];
 }
+
+export type DayOfWeek = "월요일" | "화요일" | "수요일" | "목요일" | "금요일" | "토요일" | "일요일";
+
+export interface OpeningStatus {
+  isOpen: boolean;
+  isClosed: boolean;
+  statusText: string;
+}
+
+export interface ScheduleDay {
+  day: number;
+  label: string;
+  date: string;
+  dayOfWeek: DayOfWeek;
+  locations: string[];
+}

@@ -5,7 +5,8 @@ import { Map, List, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RestaurantCard } from "@/components/restaurant-card";
 import { PlaceDetailSheet } from "@/components/place-detail-sheet";
-import { getRestaurants } from "@/lib/data";
+import { getRestaurants, SCHEDULE_DAYS } from "@/lib/data";
+import { getOpeningStatus } from "@/lib/opening-hours";
 import type { Place } from "@/lib/types";
 
 type CategoryFilter = "전체" | "식당" | "카페" | "디저트";
@@ -14,28 +15,32 @@ const CATEGORIES: CategoryFilter[] = ["전체", "식당", "카페", "디저트"]
 
 export default function RestaurantsPage() {
   const [view, setView] = useState<"list" | "map">("list");
+  const [selectedDay, setSelectedDay] = useState<number>(1);
+  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const [filter, setFilter] = useState<CategoryFilter>("전체");
-  const [locationTag, setLocationTag] = useState<string | null>(null);
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
 
   const allRestaurants = getRestaurants();
-
-  const locationTags = useMemo(() => {
-    const tags = new Set<string>();
-    allRestaurants.forEach((r) => {
-      r.location_tags?.forEach((t) => tags.add(t));
-    });
-    return Array.from(tags);
-  }, [allRestaurants]);
+  const currentDayConfig = SCHEDULE_DAYS.find((d) => d.day === selectedDay)!;
 
   const filteredRestaurants = useMemo(() => {
     return allRestaurants.filter((r) => {
-      const categoryMatch = filter === "전체" || r.category === filter;
-      const tagMatch = locationTag === null || (r.location_tags?.includes(locationTag) ?? false);
-      return categoryMatch && tagMatch;
+      const matchesDay =
+        r.location_tags?.includes(`Day ${selectedDay}`) &&
+        r.location_tags?.some((tag) => currentDayConfig.locations.includes(tag));
+      const matchesLocation =
+        !selectedLocation || (r.location_tags?.includes(selectedLocation) ?? false);
+      const matchesCategory = filter === "전체" || r.category === filter;
+      return matchesDay && matchesLocation && matchesCategory;
     });
-  }, [allRestaurants, filter, locationTag]);
+  }, [allRestaurants, selectedDay, currentDayConfig.locations, selectedLocation, filter]);
+
+  function handleDayChange(day: number) {
+    setSelectedDay(day);
+    setSelectedLocation(null);
+    setFilter("전체");
+  }
 
   function handleCardClick(place: Place) {
     setSelectedPlace(place);
@@ -67,6 +72,54 @@ export default function RestaurantsPage() {
         </div>
       </div>
 
+      {/* Day tabs */}
+      <div className="flex gap-2 overflow-x-auto pb-1">
+        {SCHEDULE_DAYS.map((d) => (
+          <button
+            key={d.day}
+            onClick={() => handleDayChange(d.day)}
+            className={
+              selectedDay === d.day
+                ? "inline-flex items-center whitespace-nowrap rounded-full border px-3 py-1 text-xs font-semibold transition-colors border-transparent bg-primary text-primary-foreground"
+                : "inline-flex items-center whitespace-nowrap rounded-full border px-3 py-1 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
+            }
+          >
+            {d.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Location sub-filter */}
+      <div className="flex flex-wrap gap-2">
+        <button
+          onClick={() => setSelectedLocation(null)}
+          className={
+            selectedLocation === null
+              ? "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-transparent text-white"
+              : "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
+          }
+          style={selectedLocation === null ? { background: "var(--sky, #0ea5e9)" } : {}}
+        >
+          전체 지역
+        </button>
+        {currentDayConfig.locations.map((loc) => (
+          <button
+            key={loc}
+            onClick={() =>
+              setSelectedLocation(selectedLocation === loc ? null : loc)
+            }
+            className={
+              selectedLocation === loc
+                ? "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-transparent text-white"
+                : "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
+            }
+            style={selectedLocation === loc ? { background: "var(--sky, #0ea5e9)" } : {}}
+          >
+            {loc}
+          </button>
+        ))}
+      </div>
+
       {/* Category filter */}
       <div className="flex flex-wrap gap-2">
         {CATEGORIES.map((cat) => (
@@ -84,35 +137,6 @@ export default function RestaurantsPage() {
         ))}
       </div>
 
-      {/* Location tag filter */}
-      <div className="flex flex-wrap gap-2">
-        <button
-          onClick={() => setLocationTag(null)}
-          className={
-            locationTag === null
-              ? "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-transparent text-white"
-              : "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
-          }
-          style={locationTag === null ? { background: "var(--sky, #0ea5e9)" } : {}}
-        >
-          전체 지역
-        </button>
-        {locationTags.map((tag) => (
-          <button
-            key={tag}
-            onClick={() => setLocationTag(locationTag === tag ? null : tag)}
-            className={
-              locationTag === tag
-                ? "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-transparent text-white"
-                : "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
-            }
-            style={locationTag === tag ? { background: "var(--sky, #0ea5e9)" } : {}}
-          >
-            {tag}
-          </button>
-        ))}
-      </div>
-
       {/* Content */}
       {view === "list" ? (
         <div className="space-y-3">
@@ -121,11 +145,15 @@ export default function RestaurantsPage() {
               key={place.id}
               place={place}
               onClick={() => handleCardClick(place)}
+              openingStatus={getOpeningStatus(
+                place.opening_hours,
+                currentDayConfig.dayOfWeek,
+              )}
             />
           ))}
           {filteredRestaurants.length === 0 && (
             <div className="py-12 text-center text-muted-foreground">
-              해당 카테고리에 등록된 맛집이 없습니다.
+              해당 조건에 맞는 맛집이 없습니다.
             </div>
           )}
         </div>
