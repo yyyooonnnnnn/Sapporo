@@ -38,6 +38,11 @@ export const places: Place[] = [
     rating: 4.5,
     notes: "운하 산책 가스등·창고 거리 구경. 평탄한 길.",
     opening_hours: ["24시간 개방"],
+    photos: [
+      "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&h=300&fit=crop",
+    ],
     reference_links: [
       { label: "오타루 당일치기 완벽 정리", url: "https://www.kkday.com/ko/blog/25217/asia-japan-hukkaido-otaru-travel-info", type: "blog" },
       { label: "오타루 관광 명소·볼거리 총정리", url: "https://hokkaido-labo.com/kr/otaru-sightseeing-1199", type: "blog" },
@@ -53,6 +58,10 @@ export const places: Place[] = [
     lng: 140.9940,
     category: "체험",
     notes: "유람선 탑승 약 40분. 영어 오디오 가이드. 당일 현장구매 가능 1,800엔/인.",
+    photos: [
+      "https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=300&fit=crop",
+    ],
     reference_links: [
       { label: "오타루 운하 크루즈 공식 안내", url: "https://otaru.cc/en/about/", type: "blog" },
       { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=오타루+운하+크루즈+후기", type: "naver" },
@@ -91,6 +100,11 @@ export const places: Place[] = [
     rating: 4.7,
     notes: "라벤더 농원 산책. 7월 중~하순 절정. 라벤더 소프트아이스크림. 무료 입장, 넓은 꽃밭 천천히 산책.",
     opening_hours: ["매일 09:00 - 17:00"],
+    photos: [
+      "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1440778303588-435521a205bc?w=400&h=300&fit=crop",
+    ],
     reference_links: [
       { label: "팜 토미타 가는 법·먹거리 가이드", url: "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-furano_biei_sounkyo/article-a1000089/", type: "blog" },
       { label: "후라노 라벤더 밭 3곳 비교 (MATCHA)", url: "https://matcha-jp.com/ko/11285", type: "blog" },
@@ -106,6 +120,10 @@ export const places: Place[] = [
     lng: 142.3920,
     category: "관광",
     notes: "라벤더 언덕 전망. 리프트 탑승 700엔. 정상에서 다이세츠잔 조망. 리프트 타면 부모님 편하게 정상 이동 가능.",
+    photos: [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=400&h=300&fit=crop",
+    ],
     reference_links: [
       { label: "후라노·비에이 추천 코스 가이드", url: "https://ko.activityjapan.com/feature/furano-biei-route/", type: "blog" },
       { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=나카후라노+라벤더+후기", type: "naver" },
@@ -121,6 +139,10 @@ export const places: Place[] = [
     category: "관광",
     rating: 4.6,
     notes: "에메랄드빛 신비 호수. 고사목 포토스팟. 파란 소프트아이스크림.",
+    photos: [
+      "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=400&h=300&fit=crop",
+    ],
     reference_links: [
       { label: "청의 호수 계절별 매력 총정리", url: "https://hokkaido-labo.com/kr/biei-blue-pond-4197", type: "blog" },
       { label: "비에이 버스투어 후기 (2024.8)", url: "https://travel.hasummer.com/entry/%EC%9D%BC%EB%B3%B8%EC%82%BF%ED%8F%AC%EB%A1%9C-2024-8%EC%9B%94-%EB%B9%84%EC%97%90%EC%9D%B4-%EB%B2%84%EC%8A%A4%ED%88%AC%EC%96%B4-%ED%9B%84%EA%B8%B05-%EC%B2%AD%EC%9D%98%ED%98%B8%EC%88%98-%ED%9D%B0%EC%88%98%EC%97%BC%ED%8F%AD%ED%8F%AC", type: "blog" },
@@ -138,6 +160,10 @@ export const places: Place[] = [
     rating: 4.5,
     notes: "유황 연기 화산 지형 산책. 정비된 산책로 30~40분 소요. 타키모토칸에서 도보 5분.",
     opening_hours: ["24시간 개방"],
+    photos: [
+      "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1601823984263-b87b59798b70?w=400&h=300&fit=crop",
+    ],
     reference_links: [
       { label: "노보리베츠 지옥계곡 100% 즐기기", url: "https://journeytellers.co.kr/8532/", type: "blog" },
       { label: "노보리베츠 추천 관광 명소 15선", url: "https://ko.skyticket.com/guide/33878", type: "blog" },
@@ -155,6 +181,10 @@ export const places: Place[] = [
     rating: 4.4,
     notes: "프리미엄 본관 특별실 78㎡ 5인. 가족탕 온천. 객실 내 가이세키 요리.",
     website: "https://www.takimotokan.co.jp",
+    photos: [
+      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+    ],
     reference_links: [
       { label: "타키모토칸 가격·후기 상세 정보", url: "https://japanhotplace.com/%EB%8B%A4%EC%9D%B4%EC%9D%B4%EC%B9%98-%ED%83%80%ED%82%A4%EB%AA%A8%ED%86%A0%EC%B9%B8-%EB%A6%AC%EB%B7%B0-%ED%9B%84%EA%B8%B0-%EA%B0%80%EA%B2%A9-%EC%A0%95%EB%B3%B4/", type: "blog" },
       { label: "노보리베츠 온천 추천 료칸 가이드", url: "https://travel.rakuten.com/contents/kor/ko-kr/guide/ryokan-noboribetsu/", type: "blog" },
