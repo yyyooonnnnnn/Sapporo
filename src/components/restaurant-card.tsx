@@ -160,12 +160,12 @@ export function RestaurantCard({ place, onClick, openingStatus }: RestaurantCard
 
         {/* Review excerpt */}
         {place.key_reviews && place.key_reviews.length > 0 && (
-          <p
-            className="text-xs leading-relaxed line-clamp-2 px-2.5 py-2 rounded-lg"
-            style={{ background: "#F8F4FF", color: "#5b5071", borderLeft: "2px solid var(--lavender-muted)" }}
+          <div
+            className="text-xs leading-relaxed px-2.5 py-2 rounded-lg overflow-hidden"
+            style={{ background: "#F8F4FF", color: "#5b5071", borderLeft: "2px solid var(--lavender-muted)", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical" as const }}
           >
             &ldquo;{place.key_reviews[0]}&rdquo;
-          </p>
+          </div>
         )}
       </CardContent>
     </Card>

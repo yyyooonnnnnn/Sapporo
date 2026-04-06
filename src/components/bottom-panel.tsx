@@ -56,10 +56,11 @@ export function BottomPanel({ open, onClose, title, children }: BottomPanelProps
       {/* Panel */}
       <div
         ref={panelRef}
-        className="relative z-10 flex max-h-[75vh] flex-col rounded-t-2xl bg-popover shadow-xl animate-in slide-in-from-bottom duration-300"
+        className="relative z-10 flex max-h-[75vh] flex-col rounded-t-2xl bg-popover shadow-xl"
+        style={{ animation: "slideUp 0.25s ease-out" }}
       >
         {/* Drag handle + close */}
-        <div className="sticky top-0 z-10 flex items-center justify-between rounded-t-2xl bg-popover px-4 pt-3 pb-2">
+        <div className="shrink-0 flex items-center justify-between rounded-t-2xl bg-popover px-4 pt-3 pb-2">
           <div className="mx-auto mb-1 h-1 w-10 rounded-full bg-muted-foreground/20" />
           <Button
             variant="ghost"
@@ -73,10 +74,7 @@ export function BottomPanel({ open, onClose, title, children }: BottomPanelProps
         </div>
 
         {/* Scrollable content */}
-        <div
-          className="flex-1 overflow-y-auto overscroll-contain px-0 pb-safe"
-          style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-y" }}
-        >
+        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
           {children}
         </div>
       </div>
