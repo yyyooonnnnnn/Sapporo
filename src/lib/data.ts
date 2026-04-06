@@ -39,8 +39,9 @@ export const places: Place[] = [
     notes: "운하 산책 가스등·창고 거리 구경. 평탄한 길.",
     opening_hours: ["24시간 개방"],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=오타루+운하+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=오타루+운하+여행+후기", type: "naver" },
+      { label: "오타루 당일치기 완벽 정리", url: "https://www.kkday.com/ko/blog/25217/asia-japan-hukkaido-otaru-travel-info", type: "blog" },
+      { label: "오타루 관광 명소·볼거리 총정리", url: "https://hokkaido-labo.com/kr/otaru-sightseeing-1199", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=오타루+운하+여행+후기", type: "naver" },
     ],
   },
   {
@@ -53,8 +54,8 @@ export const places: Place[] = [
     category: "체험",
     notes: "유람선 탑승 약 40분. 영어 오디오 가이드. 당일 현장구매 가능 1,800엔/인.",
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=오타루+운하+크루즈+여행", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=오타루+운하+크루즈+후기", type: "naver" },
+      { label: "오타루 운하 크루즈 공식 안내", url: "https://otaru.cc/en/about/", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=오타루+운하+크루즈+후기", type: "naver" },
     ],
   },
   {
@@ -75,8 +76,8 @@ export const places: Place[] = [
       "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop",
     ],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=삿포로+니조시장+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=삿포로+니조시장+후기", type: "naver" },
+      { label: "삿포로 니조시장 가이드", url: "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-sapporo-odori-tanukikoji/article-a1000065/", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=삿포로+니조시장+해산물+후기", type: "naver" },
     ],
   },
   {
@@ -91,8 +92,9 @@ export const places: Place[] = [
     notes: "라벤더 농원 산책. 7월 중~하순 절정. 라벤더 소프트아이스크림. 무료 입장, 넓은 꽃밭 천천히 산책.",
     opening_hours: ["매일 09:00 - 17:00"],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=팜+토미타+라벤더+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=팜+토미타+라벤더+후기", type: "naver" },
+      { label: "팜 토미타 가는 법·먹거리 가이드", url: "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-furano_biei_sounkyo/article-a1000089/", type: "blog" },
+      { label: "후라노 라벤더 밭 3곳 비교 (MATCHA)", url: "https://matcha-jp.com/ko/11285", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=팜토미타+라벤더+후기", type: "naver" },
     ],
   },
   {
@@ -105,8 +107,8 @@ export const places: Place[] = [
     category: "관광",
     notes: "라벤더 언덕 전망. 리프트 탑승 700엔. 정상에서 다이세츠잔 조망. 리프트 타면 부모님 편하게 정상 이동 가능.",
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=나카후라노+라벤더+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=나카후라노+라벤더+호쿠세이산+후기", type: "naver" },
+      { label: "후라노·비에이 추천 코스 가이드", url: "https://ko.activityjapan.com/feature/furano-biei-route/", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=나카후라노+라벤더+후기", type: "naver" },
     ],
   },
   {
@@ -120,8 +122,9 @@ export const places: Place[] = [
     rating: 4.6,
     notes: "에메랄드빛 신비 호수. 고사목 포토스팟. 파란 소프트아이스크림.",
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=비에이+청의+호수+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=비에이+청의+호수+여행+후기", type: "naver" },
+      { label: "청의 호수 계절별 매력 총정리", url: "https://hokkaido-labo.com/kr/biei-blue-pond-4197", type: "blog" },
+      { label: "비에이 버스투어 후기 (2024.8)", url: "https://travel.hasummer.com/entry/%EC%9D%BC%EB%B3%B8%EC%82%BF%ED%8F%AC%EB%A1%9C-2024-8%EC%9B%94-%EB%B9%84%EC%97%90%EC%9D%B4-%EB%B2%84%EC%8A%A4%ED%88%AC%EC%96%B4-%ED%9B%84%EA%B8%B05-%EC%B2%AD%EC%9D%98%ED%98%B8%EC%88%98-%ED%9D%B0%EC%88%98%EC%97%BC%ED%8F%AD%ED%8F%AC", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=비에이+청의호수+여행+후기", type: "naver" },
     ],
   },
   {
@@ -136,8 +139,9 @@ export const places: Place[] = [
     notes: "유황 연기 화산 지형 산책. 정비된 산책로 30~40분 소요. 타키모토칸에서 도보 5분.",
     opening_hours: ["24시간 개방"],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=노보리베츠+지옥계곡+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=노보리베츠+지옥계곡+여행+후기", type: "naver" },
+      { label: "노보리베츠 지옥계곡 100% 즐기기", url: "https://journeytellers.co.kr/8532/", type: "blog" },
+      { label: "노보리베츠 추천 관광 명소 15선", url: "https://ko.skyticket.com/guide/33878", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=노보리베츠+지옥계곡+후기", type: "naver" },
     ],
   },
   {
@@ -152,8 +156,9 @@ export const places: Place[] = [
     notes: "프리미엄 본관 특별실 78㎡ 5인. 가족탕 온천. 객실 내 가이세키 요리.",
     website: "https://www.takimotokan.co.jp",
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=타키모토칸+온천+가족+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=타키모토칸+온천+가족+여행+후기", type: "naver" },
+      { label: "타키모토칸 가격·후기 상세 정보", url: "https://japanhotplace.com/%EB%8B%A4%EC%9D%B4%EC%9D%B4%EC%B9%98-%ED%83%80%ED%82%A4%EB%AA%A8%ED%86%A0%EC%B9%B8-%EB%A6%AC%EB%B7%B0-%ED%9B%84%EA%B8%B0-%EA%B0%80%EA%B2%A9-%EC%A0%95%EB%B3%B4/", type: "blog" },
+      { label: "노보리베츠 온천 추천 료칸 가이드", url: "https://travel.rakuten.com/contents/kor/ko-kr/guide/ryokan-noboribetsu/", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=타키모토칸+온천+가족탕+후기", type: "naver" },
     ],
   },
 
@@ -209,8 +214,9 @@ export const places: Place[] = [
       "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
     ],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=오타루+르타오+치즈케이크+여행", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=오타루+르타오+후기", type: "naver" },
+      { label: "오타루 르타오 케이크 후기", url: "https://brunch.co.kr/@hj2021/186", type: "blog" },
+      { label: "르타오 시내 한정 디저트 6곳", url: "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-otaru/article-a1000188/", type: "blog" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=오타루+르타오+더블프로마쥬+후기", type: "naver" },
     ],
   },
 
@@ -239,8 +245,7 @@ export const places: Place[] = [
       "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop",
     ],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=삿포로+스미레+라멘+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=삿포로+스미레+라멘+후기", type: "naver" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=삿포로+스미레+미소라멘+후기", type: "naver" },
     ],
   },
   {
@@ -268,8 +273,7 @@ export const places: Place[] = [
       "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop",
     ],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=삿포로+비어가든+징기스칸+여행+브이로그", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=삿포로+비어가든+징기스칸+후기", type: "naver" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=삿포로+비어가든+징기스칸+후기", type: "naver" },
     ],
   },
   {
@@ -425,8 +429,7 @@ export const places: Place[] = [
       "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=300&fit=crop",
     ],
     reference_links: [
-      { label: "유튜브 여행 영상", url: "https://www.youtube.com/results?search_query=신치토세+로이스+초콜릿월드+여행", type: "youtube" },
-      { label: "네이버 블로그 후기", url: "https://search.naver.com/search.naver?where=blog&query=신치토세+로이스+초콜릿월드+후기", type: "naver" },
+      { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=신치토세+로이스+초콜릿월드+후기", type: "naver" },
     ],
   },
 

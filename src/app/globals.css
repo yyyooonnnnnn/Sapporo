@@ -249,3 +249,18 @@
   min-height: 44px;
   min-width: 44px;
 }
+
+/* Bottom sheet scroll fix */
+[data-slot="sheet-content"][data-side="bottom"] {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+[data-slot="sheet-content"][data-side="bottom"] .sheet-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}

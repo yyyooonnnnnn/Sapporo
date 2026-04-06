@@ -74,8 +74,8 @@ export function PlaceDetailSheet({
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="bottom" className="h-[85vh] rounded-t-2xl p-0 overflow-hidden">
-        <div className="h-full overflow-y-auto overscroll-contain" style={{ WebkitOverflowScrolling: "touch" }}>
+      <SheetContent side="bottom" className="h-[85vh] rounded-t-2xl p-0">
+        <div className="sheet-scroll-area">
           <SheetHeader className="p-4 pb-0">
             <div className="flex items-start justify-between gap-2">
               <div className="flex-1">
