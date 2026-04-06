@@ -12,6 +12,35 @@ import {
 import { ImageCarousel } from "@/components/image-carousel";
 import type { Place, OpeningStatus } from "@/lib/types";
 
+const TAG_KEYWORDS = [
+  "해산물", "초밥", "라멘", "미소", "징기스칸", "양고기", "스프카레", "카레",
+  "치즈", "치즈케이크", "소프트크림", "아이스크림", "라벤더", "초콜릿", "만주",
+  "슈크림", "버터샌드", "타르트", "디저트", "과자", "빵",
+  "커피", "라떼", "카페", "온천", "족욕",
+  "가성비", "현지인", "원조", "전통", "명가", "본점", "직매점", "한정",
+  "가족", "아이", "산책", "간식", "브런치",
+  "역근처", "공항", "운하", "시장", "사카이마치",
+  "홋카이도산", "홋카이도", "후라노", "오타루", "삿포로", "노보리베츠",
+  "분위기", "인테리어", "감성", "뷰", "야경",
+  "신선", "수제", "갓구운", "프리미엄",
+  "닭튀김", "멜론", "우유", "밀크", "맥주",
+];
+
+function extractTags(text: string): string[] {
+  const found: string[] = [];
+  for (const kw of TAG_KEYWORDS) {
+    if (text.includes(kw) && found.length < 3) {
+      found.push(kw);
+    }
+  }
+  // If we found fewer than 2 tags, add category-based fallback
+  if (found.length === 0) {
+    // Take first 4 chars as a fallback tag
+    found.push(text.slice(0, 8).replace(/[.,·].*/, "").trim());
+  }
+  return found;
+}
+
 interface RestaurantCardProps {
   place: Place;
   onClick?: () => void;
@@ -83,12 +112,17 @@ export function RestaurantCard({ place, onClick, openingStatus }: RestaurantCard
           </div>
         )}
         {place.recommendation_reason && !isClosed && (
-          <Badge
-            className="absolute top-2 left-2 max-w-[200px] truncate text-[10px]"
-            style={{ background: "var(--lavender)", color: "#fff", border: "none" }}
-          >
-            {place.recommendation_reason}
-          </Badge>
+          <div className="absolute top-2 left-2 right-10 flex flex-wrap gap-1">
+            {extractTags(place.recommendation_reason).map((tag, i) => (
+              <span
+                key={i}
+                className="inline-block rounded-full px-2 py-0.5 text-[10px] font-medium backdrop-blur-sm"
+                style={{ background: "rgba(124,109,175,0.85)", color: "#fff" }}
+              >
+                #{tag}
+              </span>
+            ))}
+          </div>
         )}
         {isClosed && (
           <Badge
