@@ -39,10 +39,10 @@ export const places: Place[] = [
     notes: "운하 산책 가스등·창고 거리 구경. 평탄한 길.",
     opening_hours: ["24시간 개방"],
     photos: [
-      "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hokkaido_Otaru-unga.jpg/500px-Hokkaido_Otaru-unga.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Otaru_Canal%2C_Hokkaido%3B_August_2005.jpg/500px-Otaru_Canal%2C_Hokkaido%3B_August_2005.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Otaru_Canal_20140817.jpg/500px-Otaru_Canal_20140817.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Otaru_Canal_HDR1.jpg/500px-Otaru_Canal_HDR1.jpg",
     ],
     reference_links: [
       { label: "오타루 당일치기 완벽 정리", url: "https://www.kkday.com/ko/blog/25217/asia-japan-hukkaido-otaru-travel-info", type: "blog" },
@@ -60,10 +60,9 @@ export const places: Place[] = [
     category: "체험",
     notes: "유람선 탑승 약 40분. 영어 오디오 가이드. 당일 현장구매 가능 1,800엔/인.",
     photos: [
-      "https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1528164344705-47542687000d?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1505440484611-23c171ad6e96?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Otaru_Canal_HDR2.jpg/500px-Otaru_Canal_HDR2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/500px_photo_%28188687001%29.jpeg/500px-500px_photo_%28188687001%29.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/20181105_OtaruHwy_4821_%2848429104671%29.jpg/500px-20181105_OtaruHwy_4821_%2848429104671%29.jpg",
     ],
     reference_links: [
       { label: "오타루 운하 크루즈 공식 안내", url: "https://otaru.cc/en/about/", type: "blog" },
@@ -83,9 +82,9 @@ export const places: Place[] = [
     opening_hours: ["매일 07:00 - 18:00"],
     location_tags: ["삿포로 시내", "Day 1"],
     photos: [
-      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Nijo_fish_Market_2014.jpg/500px-Nijo_fish_Market_2014.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/SAKURAKO_-_Nijo_Fish_Market._%288076893038%29.jpg/500px-SAKURAKO_-_Nijo_Fish_Market._%288076893038%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/SAKURAKO_-_Nijo_Fish_Market._%288076905357%29.jpg/500px-SAKURAKO_-_Nijo_Fish_Market._%288076905357%29.jpg",
     ],
     reference_links: [
       { label: "삿포로 니조시장 가이드", url: "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-sapporo-odori-tanukikoji/article-a1000065/", type: "blog" },
@@ -104,10 +103,10 @@ export const places: Place[] = [
     notes: "라벤더 농원 산책. 7월 중~하순 절정. 라벤더 소프트아이스크림. 무료 입장, 넓은 꽃밭 천천히 산책.",
     opening_hours: ["매일 09:00 - 17:00"],
     photos: [
-      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/A_Field_Of_Lavender_Farm_Tomita_%2832578019%29.jpeg/500px-A_Field_Of_Lavender_Farm_Tomita_%2832578019%29.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg/500px-140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Farm-tomita_01.jpg/500px-Farm-tomita_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lavender_soft_serve_at_Farm_Tomita.jpg/500px-Lavender_soft_serve_at_Farm_Tomita.jpg",
     ],
     reference_links: [
       { label: "팜 토미타 가는 법·먹거리 가이드", url: "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-furano_biei_sounkyo/article-a1000089/", type: "blog" },
@@ -125,9 +124,9 @@ export const places: Place[] = [
     category: "관광",
     notes: "라벤더 언덕 전망. 리프트 탑승 700엔. 정상에서 다이세츠잔 조망. 리프트 타면 부모님 편하게 정상 이동 가능.",
     photos: [
-      "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/140726_Farm_Tomita_Nakafurano_Hokkaido_Japan02n.jpg/500px-140726_Farm_Tomita_Nakafurano_Hokkaido_Japan02n.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Lavender%2C_Furano_%287662399108%29.jpg/500px-Lavender%2C_Furano_%287662399108%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Lavender_fields%2C_Furano_%2848254611081%29.jpg/500px-Lavender_fields%2C_Furano_%2848254611081%29.jpg",
     ],
     reference_links: [
       { label: "후라노·비에이 추천 코스 가이드", url: "https://ko.activityjapan.com/feature/furano-biei-route/", type: "blog" },
@@ -145,10 +144,10 @@ export const places: Place[] = [
     rating: 4.6,
     notes: "에메랄드빛 신비 호수. 고사목 포토스팟. 파란 소프트아이스크림.",
     photos: [
-      "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1578271887552-5ac3a72752bc?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Biei_Blue-pond.jpg/500px-Biei_Blue-pond.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Blue_Pond_%28Aoiike%29_at_Biei%2C_Hokkaido%2C_Japan.jpg/500px-Blue_Pond_%28Aoiike%29_at_Biei%2C_Hokkaido%2C_Japan.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Shirogane-Blue-Pond_summer.jpg/500px-Shirogane-Blue-Pond_summer.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Shirogane_Blue_Pond%2C_Biei%2C_Hokkaido_Japan.jpg/500px-Shirogane_Blue_Pond%2C_Biei%2C_Hokkaido_Japan.jpg",
     ],
     reference_links: [
       { label: "청의 호수 계절별 매력 총정리", url: "https://hokkaido-labo.com/kr/biei-blue-pond-4197", type: "blog" },
@@ -168,10 +167,9 @@ export const places: Place[] = [
     notes: "유황 연기 화산 지형 산책. 정비된 산책로 30~40분 소요. 타키모토칸에서 도보 5분.",
     opening_hours: ["24시간 개방"],
     photos: [
-      "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/1_Jigokudani_hell_valley_2015.jpg/500px-1_Jigokudani_hell_valley_2015.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_10.jpg/500px-Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_23.jpg/500px-Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_23.jpg",
     ],
     reference_links: [
       { label: "노보리베츠 지옥계곡 100% 즐기기", url: "https://journeytellers.co.kr/8532/", type: "blog" },
@@ -191,9 +189,8 @@ export const places: Place[] = [
     notes: "프리미엄 본관 특별실 78㎡ 5인. 가족탕 온천. 객실 내 가이세키 요리.",
     website: "https://www.takimotokan.co.jp",
     photos: [
-      "https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/1_Jigokudani_hell_valley_2015.jpg/500px-1_Jigokudani_hell_valley_2015.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_10.jpg/500px-Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_10.jpg",
     ],
     reference_links: [
       { label: "타키모토칸 가격·후기 상세 정보", url: "https://japanhotplace.com/%EB%8B%A4%EC%9D%B4%EC%9D%B4%EC%B9%98-%ED%83%80%ED%82%A4%EB%AA%A8%ED%86%A0%EC%B9%B8-%EB%A6%AC%EB%B7%B0-%ED%9B%84%EA%B8%B0-%EA%B0%80%EA%B2%A9-%EC%A0%95%EB%B3%B4/", type: "blog" },
@@ -308,9 +305,9 @@ export const places: Place[] = [
     website: "https://www.sapporo-bier-garten.jp",
     location_tags: ["삿포로 시내", "Day 1"],
     photos: [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Sapporo_Beer_Garden._%283788998600%29.jpg/500px-Sapporo_Beer_Garden._%283788998600%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Sapporo_beer_garden.jpg/500px-Sapporo_beer_garden.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sapporo_Odori_Beer_Garden_2015.JPG/500px-Sapporo_Odori_Beer_Garden_2015.JPG",
     ],
     reference_links: [
       { label: "네이버 블로그 후기 모음", url: "https://search.naver.com/search.naver?where=blog&query=삿포로+비어가든+징기스칸+후기", type: "naver" },
