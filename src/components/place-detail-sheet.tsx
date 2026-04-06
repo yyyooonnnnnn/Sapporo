@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetDescription,
-} from "@/components/ui/sheet";
+import { BottomPanel } from "@/components/bottom-panel";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -73,204 +67,196 @@ export function PlaceDetailSheet({
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`;
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="bottom" className="h-[85vh] rounded-t-2xl p-0">
-        <div className="sheet-scroll-area">
-          <SheetHeader className="p-4 pb-0">
-            <div className="flex items-start justify-between gap-2">
-              <div className="flex-1">
-                <SheetTitle className="text-lg">{place.name}</SheetTitle>
-                <SheetDescription className="mt-1">
-                  <Badge variant="secondary" className="mr-2">
-                    {place.category}
+    <BottomPanel open={open} onClose={() => onOpenChange(false)}>
+      <div className="px-4 pb-0">
+        <h3 className="text-lg font-medium">{place.name}</h3>
+        <div className="mt-1">
+          <Badge variant="secondary" className="mr-2">
+            {place.category}
+          </Badge>
+          {place.recommendation_reason && (
+            <Badge variant="outline" className="text-[10px]">
+              {place.recommendation_reason.length > 20
+                ? place.recommendation_reason.slice(0, 20) + "..."
+                : place.recommendation_reason}
+            </Badge>
+          )}
+        </div>
+      </div>
+
+      <div className="space-y-4 p-4">
+        {/* Image carousel */}
+        {place.photos && place.photos.length > 0 && (
+          <div className="overflow-hidden rounded-xl" style={{ height: 200 }}>
+            <ImageCarousel photos={place.photos} alt={place.name} className="h-[200px]" />
+          </div>
+        )}
+
+        {/* Rating & Price */}
+        {(place.rating || place.price_level) && (
+          <div className="flex items-center gap-4">
+            {place.rating && <StarRating rating={place.rating} />}
+            {place.price_level && (
+              <PriceLevel level={place.price_level} />
+            )}
+          </div>
+        )}
+
+        <Separator />
+
+        {/* Direction button */}
+        <div className="flex gap-2">
+          <a
+            href={directionsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-1 items-center justify-center gap-1.5 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            <Navigation className="size-4" />
+            길찾기
+          </a>
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 rounded-md border border-input bg-background px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+          >
+            <MapPin className="size-4" />
+            지도 보기
+          </a>
+        </div>
+
+        {/* Main Menu */}
+        {place.main_menu && place.main_menu.length > 0 && (
+          <>
+            <Separator />
+            <div>
+              <h4 className="mb-2 font-semibold">대표 메뉴</h4>
+              <div className="flex flex-wrap gap-2">
+                {place.main_menu.map((menu, i) => (
+                  <Badge key={i} variant="outline">
+                    {menu}
                   </Badge>
-                  {place.recommendation_reason && (
-                    <Badge variant="outline" className="text-[10px]">
-                      {place.recommendation_reason.length > 20
-                        ? place.recommendation_reason.slice(0, 20) + "..."
-                        : place.recommendation_reason}
-                    </Badge>
-                  )}
-                </SheetDescription>
+                ))}
               </div>
             </div>
-          </SheetHeader>
+          </>
+        )}
 
-          <div className="space-y-4 p-4">
-            {/* Image carousel */}
-            {place.photos && place.photos.length > 0 && (
-              <div className="overflow-hidden rounded-xl" style={{ height: 200 }}>
-                <ImageCarousel photos={place.photos} alt={place.name} className="h-[200px]" />
-              </div>
-            )}
-
-            {/* Rating & Price */}
-            {(place.rating || place.price_level) && (
-              <div className="flex items-center gap-4">
-                {place.rating && <StarRating rating={place.rating} />}
-                {place.price_level && (
-                  <PriceLevel level={place.price_level} />
-                )}
-              </div>
-            )}
-
+        {/* Recommendation */}
+        {place.recommendation_reason && (
+          <>
             <Separator />
-
-            {/* Direction button */}
-            <div className="flex gap-2">
-              <a
-                href={directionsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-1 items-center justify-center gap-1.5 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
-              >
-                <Navigation className="size-4" />
-                길찾기
-              </a>
-              <a
-                href={mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 rounded-md border border-input bg-background px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
-              >
-                <MapPin className="size-4" />
-                지도 보기
-              </a>
+            <div>
+              <h4 className="mb-2 font-semibold">추천 이유</h4>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {place.recommendation_reason}
+              </p>
             </div>
+          </>
+        )}
 
-            {/* Main Menu */}
-            {place.main_menu && place.main_menu.length > 0 && (
-              <>
-                <Separator />
-                <div>
-                  <h4 className="mb-2 font-semibold">대표 메뉴</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {place.main_menu.map((menu, i) => (
-                      <Badge key={i} variant="outline">
-                        {menu}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </>
-            )}
-
-            {/* Recommendation */}
-            {place.recommendation_reason && (
-              <>
-                <Separator />
-                <div>
-                  <h4 className="mb-2 font-semibold">추천 이유</h4>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    {place.recommendation_reason}
-                  </p>
-                </div>
-              </>
-            )}
-
-            {/* Reviews */}
-            {place.key_reviews && place.key_reviews.length > 0 && (
-              <>
-                <Separator />
-                <div>
-                  <h4 className="mb-2 font-semibold">주요 리뷰</h4>
-                  <div className="space-y-2">
-                    {place.key_reviews.map((review, i) => (
-                      <div
-                        key={i}
-                        className="rounded-lg bg-muted/50 p-3 text-sm leading-relaxed"
-                      >
-                        &ldquo;{review}&rdquo;
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </>
-            )}
-
-            {/* Reference Links */}
-            {place.reference_links && place.reference_links.length > 0 && (
-              <>
-                <Separator />
-                <div>
-                  <h4 className="mb-2 font-semibold">참고 영상 / 후기</h4>
-                  <div className="space-y-2">
-                    {place.reference_links.map((link, i) => (
-                      <a
-                        key={i}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-3 rounded-lg border p-3 text-sm transition-colors hover:bg-accent"
-                      >
-                        {link.type === "youtube" ? (
-                          <Play className="size-5 shrink-0 text-red-500" />
-                        ) : link.type === "naver" ? (
-                          <FileText className="size-5 shrink-0 text-green-500" />
-                        ) : (
-                          <Globe className="size-5 shrink-0 text-blue-500" />
-                        )}
-                        <span className="flex-1 font-medium">{link.label}</span>
-                        <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground" />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </>
-            )}
-
-            {/* Info */}
+        {/* Reviews */}
+        {place.key_reviews && place.key_reviews.length > 0 && (
+          <>
             <Separator />
-            <div className="space-y-3">
-              <h4 className="font-semibold">상세 정보</h4>
+            <div>
+              <h4 className="mb-2 font-semibold">주요 리뷰</h4>
+              <div className="space-y-2">
+                {place.key_reviews.map((review, i) => (
+                  <div
+                    key={i}
+                    className="rounded-lg bg-muted/50 p-3 text-sm leading-relaxed"
+                  >
+                    &ldquo;{review}&rdquo;
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
 
-              {place.address && (
-                <div className="flex items-start gap-2 text-sm">
-                  <MapPin className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
-                  <span>{place.address}</span>
-                </div>
-              )}
-
-              {place.phone && (
-                <div className="flex items-center gap-2 text-sm">
-                  <Phone className="size-4 shrink-0 text-muted-foreground" />
-                  <a href={`tel:${place.phone}`} className="text-primary">
-                    {place.phone}
-                  </a>
-                </div>
-              )}
-
-              {place.website && (
-                <div className="flex items-center gap-2 text-sm">
-                  <Globe className="size-4 shrink-0 text-muted-foreground" />
+        {/* Reference Links */}
+        {place.reference_links && place.reference_links.length > 0 && (
+          <>
+            <Separator />
+            <div>
+              <h4 className="mb-2 font-semibold">참고 영상 / 후기</h4>
+              <div className="space-y-2">
+                {place.reference_links.map((link, i) => (
                   <a
-                    href={place.website}
+                    key={i}
+                    href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary truncate"
+                    className="flex items-center gap-3 rounded-lg border p-3 text-sm transition-colors hover:bg-accent"
                   >
-                    {place.website}
+                    {link.type === "youtube" ? (
+                      <Play className="size-5 shrink-0 text-red-500" />
+                    ) : link.type === "naver" ? (
+                      <FileText className="size-5 shrink-0 text-green-500" />
+                    ) : (
+                      <Globe className="size-5 shrink-0 text-blue-500" />
+                    )}
+                    <span className="flex-1 font-medium">{link.label}</span>
+                    <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground" />
                   </a>
-                </div>
-              )}
-
-              {place.opening_hours && place.opening_hours.length > 0 && (
-                <div className="flex items-start gap-2 text-sm">
-                  <Clock className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
-                  <div>
-                    {place.opening_hours.map((h, i) => (
-                      <p key={i}>{h}</p>
-                    ))}
-                  </div>
-                </div>
-              )}
+                ))}
+              </div>
             </div>
+          </>
+        )}
 
-            {/* Bottom padding for safe area */}
-            <div className="h-8" />
-          </div>
+        {/* Info */}
+        <Separator />
+        <div className="space-y-3">
+          <h4 className="font-semibold">상세 정보</h4>
+
+          {place.address && (
+            <div className="flex items-start gap-2 text-sm">
+              <MapPin className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
+              <span>{place.address}</span>
+            </div>
+          )}
+
+          {place.phone && (
+            <div className="flex items-center gap-2 text-sm">
+              <Phone className="size-4 shrink-0 text-muted-foreground" />
+              <a href={`tel:${place.phone}`} className="text-primary">
+                {place.phone}
+              </a>
+            </div>
+          )}
+
+          {place.website && (
+            <div className="flex items-center gap-2 text-sm">
+              <Globe className="size-4 shrink-0 text-muted-foreground" />
+              <a
+                href={place.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary truncate"
+              >
+                {place.website}
+              </a>
+            </div>
+          )}
+
+          {place.opening_hours && place.opening_hours.length > 0 && (
+            <div className="flex items-start gap-2 text-sm">
+              <Clock className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
+              <div>
+                {place.opening_hours.map((h, i) => (
+                  <p key={i}>{h}</p>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-      </SheetContent>
-    </Sheet>
+
+        {/* Bottom padding for safe area */}
+        <div className="h-8" />
+      </div>
+    </BottomPanel>
   );
 }
