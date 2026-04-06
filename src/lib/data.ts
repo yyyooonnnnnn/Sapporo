@@ -3,7 +3,7 @@ import { Trip, Schedule, Place, Flight, Accommodation, ScheduleDay } from "./typ
 export const SCHEDULE_DAYS: ScheduleDay[] = [
   { day: 1, label: "Day 1 (금)", date: "2025-08-01", dayOfWeek: "금요일", locations: ["오타루 운하", "삿포로 시내"] },
   { day: 2, label: "Day 2 (토)", date: "2025-08-02", dayOfWeek: "토요일", locations: ["팜 토미타", "후라노"] },
-  { day: 3, label: "Day 3 (일)", date: "2025-08-03", dayOfWeek: "일요일", locations: ["후라노", "노보리베츠"] },
+  { day: 3, label: "Day 3 (일)", date: "2025-08-03", dayOfWeek: "일요일", locations: ["후라노", "삿포로 시내", "노보리베츠"] },
   { day: 4, label: "Day 4 (월)", date: "2025-08-04", dayOfWeek: "월요일", locations: ["노보리베츠", "신치토세 공항"] },
 ];
 
@@ -408,7 +408,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 에스타 10층에 위치. 홋카이도 4대 라멘(삿포로·하코다테·아사히카와·구시로) 전문점이 모여 있어 이동 중 빠르게 홋카이도 라멘을 경험하기에 최적의 장소.",
     opening_hours: ["매일 11:00 - 22:00 (마지막 주문 21:30)"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
@@ -694,7 +694,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "홋카이도 대표 과자 시로이코이비토의 이시야가 운영하는 직영 카페. 삿포로역 바로 앞이라 이동 중 잠깐 들르기에 최적.",
     opening_hours: ["매일 10:00 - 20:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
@@ -721,7 +721,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 인근 로이스 직매점. 공항에서 못 산 초콜릿을 미리 구매할 수 있으며 매장 한정 소프트크림도 즐길 수 있음.",
     opening_hours: ["매일 10:00 - 20:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
@@ -1347,7 +1347,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로 징기스칸 원조, 삿포로역 접근성 최고",
     opening_hours: ["매일 11:00 - 23:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
     ],
@@ -1369,7 +1369,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로 새우라멘 명가, 아이들도 좋아하는 맛",
     opening_hours: ["매일 10:30 - 22:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
     ],
@@ -1391,7 +1391,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 근처 숨은 감성 카페",
     opening_hours: ["매일 10:00 - 19:00 (수요일 휴무)"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
     ],
@@ -1413,7 +1413,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 내 홋카이도 우유 디저트 전문점",
     opening_hours: ["매일 10:00 - 21:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop",
     ],
@@ -1435,7 +1435,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "홋카이도 3대 슈크림, 삿포로역 근처 아름다운 본관",
     opening_hours: ["매일 10:00 - 18:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
     ],
@@ -1457,7 +1457,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "오타루 르타오를 삿포로역에서, 선물 구매도 가능",
     opening_hours: ["매일 10:00 - 21:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop",
     ],
@@ -1712,7 +1712,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 내 가벼운 양식, 일식 지칠 때 대안",
     opening_hours: ["매일 07:00 - 22:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop",
     ],
@@ -1734,7 +1734,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로 3대 스프카레 맛집, 깊은 향신료 국물",
     opening_hours: ["매일 11:30 - 21:30 (화요일 휴무)"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop",
     ],
