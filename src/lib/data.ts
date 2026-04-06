@@ -3,7 +3,7 @@ import { Trip, Schedule, Place, Flight, Accommodation, ScheduleDay } from "./typ
 export const SCHEDULE_DAYS: ScheduleDay[] = [
   { day: 1, label: "Day 1 (금)", date: "2025-08-01", dayOfWeek: "금요일", locations: ["오타루 운하", "삿포로 시내"] },
   { day: 2, label: "Day 2 (토)", date: "2025-08-02", dayOfWeek: "토요일", locations: ["팜 토미타", "후라노"] },
-  { day: 3, label: "Day 3 (일)", date: "2025-08-03", dayOfWeek: "일요일", locations: ["삿포로역", "노보리베츠"] },
+  { day: 3, label: "Day 3 (일)", date: "2025-08-03", dayOfWeek: "일요일", locations: ["후라노", "노보리베츠"] },
   { day: 4, label: "Day 4 (월)", date: "2025-08-04", dayOfWeek: "월요일", locations: ["노보리베츠", "신치토세 공항"] },
 ];
 
@@ -40,8 +40,9 @@ export const places: Place[] = [
     opening_hours: ["24시간 개방"],
     photos: [
       "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1480796927426-f609979314bd?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=400&h=300&fit=crop",
     ],
     reference_links: [
       { label: "오타루 당일치기 완벽 정리", url: "https://www.kkday.com/ko/blog/25217/asia-japan-hukkaido-otaru-travel-info", type: "blog" },
@@ -61,6 +62,8 @@ export const places: Place[] = [
     photos: [
       "https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1528164344705-47542687000d?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1505440484611-23c171ad6e96?w=400&h=300&fit=crop",
     ],
     reference_links: [
       { label: "오타루 운하 크루즈 공식 안내", url: "https://otaru.cc/en/about/", type: "blog" },
@@ -101,9 +104,10 @@ export const places: Place[] = [
     notes: "라벤더 농원 산책. 7월 중~하순 절정. 라벤더 소프트아이스크림. 무료 입장, 넓은 꽃밭 천천히 산책.",
     opening_hours: ["매일 09:00 - 17:00"],
     photos: [
-      "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1440778303588-435521a205bc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=400&h=300&fit=crop",
     ],
     reference_links: [
       { label: "팜 토미타 가는 법·먹거리 가이드", url: "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-furano_biei_sounkyo/article-a1000089/", type: "blog" },
@@ -121,8 +125,9 @@ export const places: Place[] = [
     category: "관광",
     notes: "라벤더 언덕 전망. 리프트 탑승 700엔. 정상에서 다이세츠잔 조망. 리프트 타면 부모님 편하게 정상 이동 가능.",
     photos: [
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=400&h=300&fit=crop",
     ],
     reference_links: [
       { label: "후라노·비에이 추천 코스 가이드", url: "https://ko.activityjapan.com/feature/furano-biei-route/", type: "blog" },
@@ -141,7 +146,9 @@ export const places: Place[] = [
     notes: "에메랄드빛 신비 호수. 고사목 포토스팟. 파란 소프트아이스크림.",
     photos: [
       "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1578271887552-5ac3a72752bc?w=400&h=300&fit=crop",
     ],
     reference_links: [
       { label: "청의 호수 계절별 매력 총정리", url: "https://hokkaido-labo.com/kr/biei-blue-pond-4197", type: "blog" },
@@ -162,7 +169,9 @@ export const places: Place[] = [
     opening_hours: ["24시간 개방"],
     photos: [
       "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1601823984263-b87b59798b70?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=400&h=300&fit=crop",
     ],
     reference_links: [
       { label: "노보리베츠 지옥계곡 100% 즐기기", url: "https://journeytellers.co.kr/8532/", type: "blog" },
@@ -182,8 +191,9 @@ export const places: Place[] = [
     notes: "프리미엄 본관 특별실 78㎡ 5인. 가족탕 온천. 객실 내 가이세키 요리.",
     website: "https://www.takimotokan.co.jp",
     photos: [
-      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop",
     ],
     reference_links: [
       { label: "타키모토칸 가격·후기 상세 정보", url: "https://japanhotplace.com/%EB%8B%A4%EC%9D%B4%EC%9D%B4%EC%B9%98-%ED%83%80%ED%82%A4%EB%AA%A8%ED%86%A0%EC%B9%B8-%EB%A6%AC%EB%B7%B0-%ED%9B%84%EA%B8%B0-%EA%B0%80%EA%B2%A9-%EC%A0%95%EB%B3%B4/", type: "blog" },
@@ -351,7 +361,7 @@ export const places: Place[] = [
     recommendation_reason: "홋카이도 대표 라벤더 농장 팜 토미타 내 카페. 보랏빛 라벤더 밭을 배경으로 라벤더 소프트크림과 후라노 제철 멜론 디저트를 즐길 수 있는 후라노 여행의 아이콘.",
     opening_hours: ["매일 09:00 - 17:00 (6-8월 연장 운영)"],
     website: "https://www.farm-tomita.co.jp",
-    location_tags: ["팜 토미타", "후라노", "Day 2"],
+    location_tags: ["팜 토미타", "후라노", "Day 2", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
@@ -375,7 +385,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "후라노시 직영 치즈 공방으로 홋카이도 낙농 문화를 체험할 수 있는 곳. 치즈 제조 과정 견학과 갓 만든 치즈 디저트 시식은 아이들이 있는 가족 여행에 특히 추천.",
     opening_hours: ["매일 09:00 - 17:00 (11-4월 단축 운영)"],
-    location_tags: ["후라노", "Day 2"],
+    location_tags: ["후라노", "Day 2", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400&h=300&fit=crop",
@@ -401,7 +411,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 에스타 10층에 위치. 홋카이도 4대 라멘(삿포로·하코다테·아사히카와·구시로) 전문점이 모여 있어 이동 중 빠르게 홋카이도 라멘을 경험하기에 최적의 장소.",
     opening_hours: ["매일 11:00 - 22:00 (마지막 주문 21:30)"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
@@ -687,7 +697,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "홋카이도 대표 과자 시로이코이비토의 이시야가 운영하는 직영 카페. 삿포로역 바로 앞이라 이동 중 잠깐 들르기에 최적.",
     opening_hours: ["매일 10:00 - 20:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
@@ -714,7 +724,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 인근 로이스 직매점. 공항에서 못 산 초콜릿을 미리 구매할 수 있으며 매장 한정 소프트크림도 즐길 수 있음.",
     opening_hours: ["매일 10:00 - 20:00"],
-    location_tags: ["삿포로역", "삿포로 시내", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
@@ -866,7 +876,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "후라노 치즈공방 인접 과일 주스 공장. 후라노산 과일 100% 주스를 시음·구매할 수 있으며 아이들 견학 체험으로도 인기.",
     opening_hours: ["매일 09:00 - 17:00 (11-4월 단축)"],
-    location_tags: ["후라노", "Day 2"],
+    location_tags: ["후라노", "Day 2", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&h=300&fit=crop",
@@ -894,7 +904,7 @@ export const places: Place[] = [
     recommendation_reason: "홋카이도 대표 과자점 롯카테이의 후라노 한정 매장. 포도밭 뷰와 함께 한정 디저트를 즐길 수 있는 후라노 필수 방문 스위트 스팟.",
     opening_hours: ["매일 09:00 - 17:00 (5-10월 연장)"],
     website: "https://www.rokkatei.co.jp",
-    location_tags: ["후라노", "Day 2"],
+    location_tags: ["후라노", "Day 2", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
@@ -918,7 +928,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "후라노 멜론 반 개에 소프트크림을 올린 시그니처 '선카프'로 유명한 농장 젤라토 가게. 팜토미타 인근이라 관광 후 들르기 편리.",
     opening_hours: ["매일 09:00 - 17:00 (6-9월 연장 운영)"],
-    location_tags: ["팜 토미타", "후라노", "Day 2"],
+    location_tags: ["팜 토미타", "후라노", "Day 2", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
@@ -942,7 +952,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "팜토미타 직영 멜론 하우스. 후라노산 완숙 멜론을 그 자리에서 잘라 먹을 수 있으며 멜론 디저트 종류가 풍부한 여름 인기 명소.",
     opening_hours: ["매일 09:00 - 17:00 (6-9월만 운영)"],
-    location_tags: ["팜 토미타", "후라노", "Day 2"],
+    location_tags: ["팜 토미타", "후라노", "Day 2", "Day 3"],
     photos: [
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
@@ -1340,7 +1350,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로 징기스칸 원조, 삿포로역 접근성 최고",
     opening_hours: ["매일 11:00 - 23:00"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
     ],
@@ -1362,7 +1372,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로 새우라멘 명가, 아이들도 좋아하는 맛",
     opening_hours: ["매일 10:30 - 22:00"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
     ],
@@ -1384,7 +1394,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 근처 숨은 감성 카페",
     opening_hours: ["매일 10:00 - 19:00 (수요일 휴무)"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
     ],
@@ -1406,7 +1416,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 내 홋카이도 우유 디저트 전문점",
     opening_hours: ["매일 10:00 - 21:00"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop",
     ],
@@ -1428,7 +1438,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "홋카이도 3대 슈크림, 삿포로역 근처 아름다운 본관",
     opening_hours: ["매일 10:00 - 18:00"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
     ],
@@ -1450,7 +1460,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "오타루 르타오를 삿포로역에서, 선물 구매도 가능",
     opening_hours: ["매일 10:00 - 21:00"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop",
     ],
@@ -1705,7 +1715,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 내 가벼운 양식, 일식 지칠 때 대안",
     opening_hours: ["매일 07:00 - 22:00"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop",
     ],
@@ -1727,7 +1737,7 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로 3대 스프카레 맛집, 깊은 향신료 국물",
     opening_hours: ["매일 11:30 - 21:30 (화요일 휴무)"],
-    location_tags: ["삿포로역", "Day 3"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 1"],
     photos: [
       "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop",
     ],
@@ -1780,6 +1790,169 @@ export const places: Place[] = [
     location_tags: ["신치토세 공항", "Day 4"],
     photos: [
       "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop",
+    ],
+  },
+
+  // ── Day 2 후라노 다양성 추가 ──
+
+  {
+    id: "place-083",
+    trip_id: "trip-001",
+    name: "후라노 야키토리 하치 (焼鳥 はち)",
+    address: "Hinode-machi 1, Furano, Hokkaido 076-0026",
+    lat: 43.3410,
+    lng: 142.3840,
+    category: "식당",
+    rating: 4.3,
+    price_level: 1,
+    main_menu: ["숯불 야키토리 모듬", "쓰쿠네(닭완자)", "닭껍질 구이", "야키토리 덮밥"],
+    key_reviews: [
+      "후라노 현지인들이 사랑하는 야키토리집! 숯불 향이 좋고 닭이 통통해요.",
+      "저녁 시간에 가면 분위기가 좋아요. 맥주와 함께 가볍게 즐기기 딱 좋습니다.",
+    ],
+    recommendation_reason: "후라노 현지인 추천 숯불 야키토리, 가성비 좋은 저녁",
+    opening_hours: ["매일 17:00 - 22:00 (월요일 휴무)"],
+    location_tags: ["후라노", "Day 2"],
+    photos: [
+      "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: "place-084",
+    trip_id: "trip-001",
+    name: "후라노 돈카츠 카츠야 (かつ家)",
+    address: "Asahimachi 3, Furano, Hokkaido 076-0025",
+    lat: 43.3405,
+    lng: 142.3830,
+    category: "식당",
+    rating: 4.2,
+    price_level: 1,
+    main_menu: ["로스카츠 정식", "히레카츠 정식", "카츠카레", "에비후라이"],
+    key_reviews: [
+      "후라노에서 든든한 한 끼로 딱! 바삭한 돈카츠에 밥과 된장국 세트가 맛있어요.",
+      "관광 후 허기질 때 들르면 좋아요. 양도 넉넉하고 가격도 합리적입니다.",
+    ],
+    recommendation_reason: "후라노 든든한 돈카츠 정식, 관광 후 허기 충전",
+    opening_hours: ["매일 11:00 - 14:00, 17:00 - 20:30"],
+    location_tags: ["후라노", "Day 2"],
+    photos: [
+      "https://images.unsplash.com/photo-1554502078-ef0fc409efce?w=400&h=300&fit=crop",
+    ],
+  },
+
+  // ── Day 3 후라노 점심 (출발 전) ──
+
+  {
+    id: "place-085",
+    trip_id: "trip-001",
+    name: "후라노 오므라이스 집 포푸라 (ぽぷら)",
+    address: "Asahimachi 5, Furano, Hokkaido 076-0025",
+    lat: 43.3400,
+    lng: 142.3825,
+    category: "식당",
+    rating: 4.4,
+    price_level: 1,
+    main_menu: ["후라노 에그 오므라이스", "함박 스테이크", "나폴리탄", "카레 오므라이스"],
+    key_reviews: [
+      "부드러운 오므라이스가 정말 맛있어요! 홋카이도 달걀이라 그런지 계란이 특히 고소해요.",
+      "아이들도 어른들도 좋아하는 메뉴. 후라노 출발 전 점심으로 딱 좋은 곳.",
+    ],
+    recommendation_reason: "후라노 인기 오므라이스, 홋카이도 달걀의 부드러움",
+    opening_hours: ["매일 11:00 - 14:30, 17:00 - 20:00 (화요일 휴무)"],
+    location_tags: ["후라노", "Day 3"],
+    photos: [
+      "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: "place-086",
+    trip_id: "trip-001",
+    name: "후라노 우동 토미카와 (富川製麺)",
+    address: "Hanaen-cho, Furano, Hokkaido 076-0054",
+    lat: 43.3415,
+    lng: 142.3850,
+    category: "식당",
+    rating: 4.3,
+    price_level: 1,
+    main_menu: ["가마아게 우동", "카케 우동", "탄탄 우동", "텐뿌라 우동"],
+    key_reviews: [
+      "후라노산 밀가루로 만든 수타 우동이 쫄깃하고 맛있어요. 따뜻한 우동이 여행 중 위로가 돼요.",
+      "일식이 느끼할 때 간단히 우동 한 그릇! 부모님이 특히 좋아하실 메뉴.",
+    ],
+    recommendation_reason: "후라노산 밀 수타 우동, 부모님 입맛에 딱",
+    opening_hours: ["매일 11:00 - 15:00"],
+    location_tags: ["후라노", "Day 3"],
+    photos: [
+      "https://images.unsplash.com/photo-1618841557871-b4664fbf0cb3?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: "place-087",
+    trip_id: "trip-001",
+    name: "후라노 한식당 서울 (韓国料理 ソウル)",
+    address: "Hinode-machi 2, Furano, Hokkaido 076-0026",
+    lat: 43.3412,
+    lng: 142.3845,
+    category: "식당",
+    rating: 4.1,
+    price_level: 2,
+    main_menu: ["돌솥비빔밥", "순두부찌개", "불고기 정식", "냉면"],
+    key_reviews: [
+      "후라노에서 한식이 그리울 때! 된장찌개가 진짜 한국 맛이에요. 부모님이 감동하셨어요.",
+      "여행 3일차쯤 되면 한식이 당기는데, 여기서 해결. 밥맛이 좋아요.",
+    ],
+    recommendation_reason: "후라노의 한식당, 여행 중 한식이 그리울 때",
+    opening_hours: ["매일 11:30 - 14:00, 17:00 - 21:00"],
+    location_tags: ["후라노", "Day 3"],
+    photos: [
+      "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400&h=300&fit=crop",
+    ],
+  },
+
+  // ── Day 4 신치토세 공항 다양성 추가 ──
+
+  {
+    id: "place-088",
+    trip_id: "trip-001",
+    name: "신치토세 공항 돈카츠 이나바 (いなば 新千歳空港店)",
+    address: "New Chitose Airport 3F, Chitose, Hokkaido 066-0012",
+    lat: 42.7756,
+    lng: 141.6921,
+    category: "식당",
+    rating: 4.3,
+    price_level: 2,
+    main_menu: ["로스카츠 정식", "히레카츠 정식", "카츠카레", "미니 카츠동"],
+    key_reviews: [
+      "공항에서 먹는 마지막 한 끼! 바삭한 돈카츠가 든든하고 맛있어요.",
+      "비행기 전 든든하게 먹기 좋아요. 소스가 3종류라 취향대로 골라 먹을 수 있어요.",
+    ],
+    recommendation_reason: "공항 돈카츠 정식, 귀국 전 든든한 마지막 식사",
+    opening_hours: ["매일 10:30 - 20:30"],
+    location_tags: ["신치토세 공항", "Day 4"],
+    photos: [
+      "https://images.unsplash.com/photo-1554502078-ef0fc409efce?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: "place-089",
+    trip_id: "trip-001",
+    name: "신치토세 공항 카이센동 키타노 미야비 (北のグルメ)",
+    address: "New Chitose Airport 3F, Chitose, Hokkaido 066-0012",
+    lat: 42.7759,
+    lng: 141.6923,
+    category: "식당",
+    rating: 4.4,
+    price_level: 2,
+    main_menu: ["홋카이도 카이센동", "성게·연어알 이쿠라동", "대게 정식", "해산물 라멘"],
+    key_reviews: [
+      "공항에서 마지막으로 먹는 해산물! 카이센동이 신선하고 양이 넉넉해요.",
+      "성게가 달콤하고 연어알이 톡톡 터져요. 홋카이도 마지막 해산물로 최고의 선택.",
+    ],
+    recommendation_reason: "공항 신선 해산물 덮밥, 홋카이도 마지막 바다 맛",
+    opening_hours: ["매일 09:00 - 20:00"],
+    location_tags: ["신치토세 공항", "Day 4"],
+    photos: [
+      "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop",
     ],
   },
 ];
