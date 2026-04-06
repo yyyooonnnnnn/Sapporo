@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Map, List, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { RestaurantCard } from "@/components/restaurant-card";
 import { PlaceDetailSheet } from "@/components/place-detail-sheet";
 import { getRestaurants, SCHEDULE_DAYS } from "@/lib/data";
@@ -14,7 +12,6 @@ type CategoryFilter = "전체" | "식당" | "카페" | "디저트";
 const CATEGORIES: CategoryFilter[] = ["전체", "식당", "카페", "디저트"];
 
 export default function RestaurantsPage() {
-  const [view, setView] = useState<"list" | "map">("list");
   const [selectedDay, setSelectedDay] = useState<number>(1);
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const [filter, setFilter] = useState<CategoryFilter>("전체");
@@ -52,24 +49,6 @@ export default function RestaurantsPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-bold">맛집 목록</h2>
-        <div className="flex gap-1">
-          <Button
-            variant={view === "list" ? "default" : "outline"}
-            size="icon-sm"
-            aria-label="목록 보기"
-            onClick={() => setView("list")}
-          >
-            <List className="size-4" />
-          </Button>
-          <Button
-            variant={view === "map" ? "default" : "outline"}
-            size="icon-sm"
-            aria-label="지도 보기"
-            onClick={() => setView("map")}
-          >
-            <Map className="size-4" />
-          </Button>
-        </div>
       </div>
 
       {/* Day tabs */}
@@ -138,37 +117,24 @@ export default function RestaurantsPage() {
       </div>
 
       {/* Content */}
-      {view === "list" ? (
-        <div className="space-y-3">
-          {filteredRestaurants.map((place) => (
-            <RestaurantCard
-              key={place.id}
-              place={place}
-              onClick={() => handleCardClick(place)}
-              openingStatus={getOpeningStatus(
-                place.opening_hours,
-                currentDayConfig.dayOfWeek,
-              )}
-            />
-          ))}
-          {filteredRestaurants.length === 0 && (
-            <div className="py-12 text-center text-muted-foreground">
-              해당 조건에 맞는 맛집이 없습니다.
-            </div>
-          )}
-        </div>
-      ) : (
-        <div className="flex h-64 items-center justify-center rounded-lg border bg-muted">
-          <div className="text-center text-muted-foreground">
-            <MapPin className="mx-auto mb-2 size-8 opacity-40" />
-            <p className="text-sm font-medium">지도 뷰</p>
-            <p className="text-xs mt-1">
-              Google Maps API 키를 설정하면
-            </p>
-            <p className="text-xs">지도에서 맛집을 확인할 수 있습니다.</p>
+      <div className="space-y-3">
+        {filteredRestaurants.map((place) => (
+          <RestaurantCard
+            key={place.id}
+            place={place}
+            onClick={() => handleCardClick(place)}
+            openingStatus={getOpeningStatus(
+              place.opening_hours,
+              currentDayConfig.dayOfWeek,
+            )}
+          />
+        ))}
+        {filteredRestaurants.length === 0 && (
+          <div className="py-12 text-center text-muted-foreground">
+            해당 조건에 맞는 맛집이 없습니다.
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       <PlaceDetailSheet
         place={selectedPlace}

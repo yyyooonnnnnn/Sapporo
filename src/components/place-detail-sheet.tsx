@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Star,
   MapPin,
@@ -75,8 +74,8 @@ export function PlaceDetailSheet({
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="bottom" className="h-[85vh] rounded-t-2xl p-0">
-        <ScrollArea className="h-full">
+      <SheetContent side="bottom" className="h-[85vh] rounded-t-2xl p-0 overflow-hidden">
+        <div className="h-full overflow-y-auto overscroll-contain" style={{ WebkitOverflowScrolling: "touch" }}>
           <SheetHeader className="p-4 pb-0">
             <div className="flex items-start justify-between gap-2">
               <div className="flex-1">
@@ -116,17 +115,6 @@ export function PlaceDetailSheet({
             )}
 
             <Separator />
-
-            {/* Map placeholder */}
-            <div className="overflow-hidden rounded-lg border bg-muted">
-              <div className="flex h-40 items-center justify-center text-sm text-muted-foreground">
-                <div className="text-center">
-                  <MapPin className="mx-auto mb-2 size-8 text-muted-foreground/50" />
-                  <p>Google Maps API 키를 설정하면</p>
-                  <p>지도가 표시됩니다</p>
-                </div>
-              </div>
-            </div>
 
             {/* Direction button */}
             <div className="flex gap-2">
@@ -279,9 +267,9 @@ export function PlaceDetailSheet({
             </div>
 
             {/* Bottom padding for safe area */}
-            <div className="h-4" />
+            <div className="h-8" />
           </div>
-        </ScrollArea>
+        </div>
       </SheetContent>
     </Sheet>
   );

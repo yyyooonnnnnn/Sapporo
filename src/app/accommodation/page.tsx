@@ -120,20 +120,6 @@ export default function AccommodationPage() {
 
               <Separator style={{ background: "var(--lavender-light)" }} />
 
-              {/* Map placeholder */}
-              <div className="overflow-hidden rounded-xl border" style={{ borderColor: "var(--lavender-muted)", borderWidth: "1px" }}>
-                <div
-                  className="flex h-36 items-center justify-center text-sm text-muted-foreground"
-                  style={{ background: "linear-gradient(135deg, #F8F4FF 0%, #E8F6FD 100%)" }}
-                >
-                  <div className="text-center">
-                    <div className="text-3xl mb-2">🗺️</div>
-                    <p className="text-xs text-muted-foreground">Google Maps API 키를 설정하면</p>
-                    <p className="text-xs text-muted-foreground">지도가 표시됩니다</p>
-                  </div>
-                </div>
-              </div>
-
               {/* Action buttons */}
               <div className="flex gap-2">
                 <a
