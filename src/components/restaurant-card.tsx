@@ -9,6 +9,7 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
+import { ImageCarousel } from "@/components/image-carousel";
 import type { Place } from "@/lib/types";
 
 interface RestaurantCardProps {
@@ -62,17 +63,23 @@ export function RestaurantCard({ place, onClick }: RestaurantCardProps) {
         }
       }}
     >
-      {/* Photo placeholder with warm gradient */}
-      <div
-        className="relative flex h-36 items-center justify-center"
-        style={{
-          background: "linear-gradient(135deg, #F8F4FF 0%, #EEF7FD 60%, #FDF0E8 100%)",
-        }}
-      >
-        <div className="text-center">
-          <div className="text-4xl leading-none mb-1">{emoji}</div>
-          <span className="text-xs text-muted-foreground font-medium">{place.category}</span>
-        </div>
+      {/* Photo carousel */}
+      <div className="relative h-36 overflow-hidden">
+        {place.photos && place.photos.length > 0 ? (
+          <ImageCarousel photos={place.photos} alt={place.name} className="h-36" />
+        ) : (
+          <div
+            className="flex h-36 items-center justify-center"
+            style={{
+              background: "linear-gradient(135deg, #F8F4FF 0%, #EEF7FD 60%, #FDF0E8 100%)",
+            }}
+          >
+            <div className="text-center">
+              <div className="text-4xl leading-none mb-1">{emoji}</div>
+              <span className="text-xs text-muted-foreground font-medium">{place.category}</span>
+            </div>
+          </div>
+        )}
         {place.recommendation_reason && (
           <Badge
             className="absolute top-2 left-2 max-w-[200px] truncate text-[10px]"

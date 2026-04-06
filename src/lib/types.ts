@@ -34,6 +34,7 @@ export interface Place {
   price_level?: number;
   main_menu?: string[];
   photos?: string[];
+  location_tags?: string[];
   key_reviews?: string[];
   recommendation_reason?: string;
   notes?: string;

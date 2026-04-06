@@ -18,6 +18,7 @@ import {
   Clock,
   Navigation,
 } from "lucide-react";
+import { ImageCarousel } from "@/components/image-carousel";
 import type { Place } from "@/lib/types";
 
 interface PlaceDetailSheetProps {
@@ -94,6 +95,13 @@ export function PlaceDetailSheet({
           </SheetHeader>
 
           <div className="space-y-4 p-4">
+            {/* Image carousel */}
+            {place.photos && place.photos.length > 0 && (
+              <div className="overflow-hidden rounded-xl" style={{ height: 200 }}>
+                <ImageCarousel photos={place.photos} alt={place.name} className="h-[200px]" />
+              </div>
+            )}
+
             {/* Rating & Price */}
             {(place.rating || place.price_level) && (
               <div className="flex items-center gap-4">

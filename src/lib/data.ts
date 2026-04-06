@@ -53,6 +53,12 @@ export const places: Place[] = [
     rating: 4.3,
     notes: "해산물 저녁, 성게·연어알·대게. 시장은 저녁 5시까지, 근처 식당 이용.",
     opening_hours: ["매일 07:00 - 18:00"],
+    location_tags: ["삿포로 시내", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop",
+    ],
   },
   {
     id: "place-005",
@@ -74,7 +80,7 @@ export const places: Place[] = [
     lat: 43.3609,
     lng: 142.3920,
     category: "관광",
-    notes: "라벤더 언덕 전망. 리프트 탑승 700엔. 정상에서 다이세츠잔 조망. 리프트 타면 어르신 편하게 정상 이동 가능.",
+    notes: "라벤더 언덕 전망. 리프트 탑승 700엔. 정상에서 다이세츠잔 조망. 리프트 타면 부모님 편하게 정상 이동 가능.",
   },
   {
     id: "place-007",
@@ -132,6 +138,12 @@ export const places: Place[] = [
     ],
     recommendation_reason: "오타루 운하 관광 후 점심 또는 저녁으로 최적. 홋카이도 신선 해산물로 만든 에도마에 초밥의 정수를 경험할 수 있는 100년 전통 명가.",
     opening_hours: ["월-토 11:30-14:00, 17:00-21:00", "일요일 휴무"],
+    location_tags: ["오타루 운하", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=400&h=300&fit=crop",
+    ],
   },
   {
     id: "place-011",
@@ -151,6 +163,12 @@ export const places: Place[] = [
     recommendation_reason: "사카이마치 거리의 르타오 본점. 홋카이도산 우유와 크림치즈로 만든 생치즈케이크 '더블 프로마주'는 전국적으로 유명한 오타루 대표 디저트.",
     opening_hours: ["매일 09:00 - 18:00"],
     website: "https://www.letao.jp",
+    location_tags: ["오타루 운하", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
+    ],
   },
 
   // Day 1 - 삿포로
@@ -171,6 +189,12 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로 미소 라멘의 원조로 꼽히는 명가. 홋카이도 특산 버터와 콘이 올라간 삿포로식 라멘은 현지인과 여행객 모두에게 사랑받는 소울푸드.",
     opening_hours: ["매일 11:00 - 21:00 (재료 소진 시 조기마감)"],
+    location_tags: ["삿포로 시내", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1557872943-16a5ac26587e?w=400&h=300&fit=crop",
+    ],
   },
   {
     id: "place-013",
@@ -190,6 +214,12 @@ export const places: Place[] = [
     recommendation_reason: "1876년 설립된 삿포로 맥주 원조 공장 부지에 위치. 홋카이도 대표 요리 징기스칸(양고기 BBQ)과 삿포로 생맥주를 함께 즐길 수 있는 삿포로 필수 코스.",
     opening_hours: ["매일 11:30 - 21:00 (마지막 주문 20:00)"],
     website: "https://www.sapporo-bier-garten.jp",
+    location_tags: ["삿포로 시내", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop",
+    ],
   },
   {
     id: "place-014",
@@ -209,6 +239,12 @@ export const places: Place[] = [
     recommendation_reason: "홋카이도 우유를 직접 사용하는 지역 명과점 키노토야 카페. 오도리 공원 바로 옆에 위치해 산책 중 가볍게 들르기 좋으며 홋카이도 낙농 문화를 맛으로 경험할 수 있음.",
     opening_hours: ["매일 10:00 - 19:00"],
     website: "https://www.kinotoya.com",
+    location_tags: ["삿포로 시내", "Day 2"],
+    photos: [
+      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
+    ],
   },
 
   // Day 2 - 후라노
@@ -230,6 +266,12 @@ export const places: Place[] = [
     recommendation_reason: "홋카이도 대표 라벤더 농장 팜 토미타 내 카페. 보랏빛 라벤더 밭을 배경으로 라벤더 소프트크림과 후라노 제철 멜론 디저트를 즐길 수 있는 후라노 여행의 아이콘.",
     opening_hours: ["매일 09:00 - 17:00 (6-8월 연장 운영)"],
     website: "https://www.farm-tomita.co.jp",
+    location_tags: ["팜 토미타", "후라노", "Day 2"],
+    photos: [
+      "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
+    ],
   },
   {
     id: "place-016",
@@ -248,6 +290,12 @@ export const places: Place[] = [
     ],
     recommendation_reason: "후라노시 직영 치즈 공방으로 홋카이도 낙농 문화를 체험할 수 있는 곳. 치즈 제조 과정 견학과 갓 만든 치즈 디저트 시식은 아이들이 있는 가족 여행에 특히 추천.",
     opening_hours: ["매일 09:00 - 17:00 (11-4월 단축 운영)"],
+    location_tags: ["후라노", "Day 2"],
+    photos: [
+      "https://images.unsplash.com/photo-1486427944544-d2052751f651?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1559561853-08451507cbe7?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300&fit=crop",
+    ],
   },
 
   // Day 3 - 삿포로 경유
@@ -268,6 +316,12 @@ export const places: Place[] = [
     ],
     recommendation_reason: "삿포로역 에스타 10층에 위치. 홋카이도 4대 라멘(삿포로·하코다테·아사히카와·구시로) 전문점이 모여 있어 이동 중 빠르게 홋카이도 라멘을 경험하기에 최적의 장소.",
     opening_hours: ["매일 11:00 - 22:00 (마지막 주문 21:30)"],
+    location_tags: ["삿포로역", "삿포로 시내", "Day 3"],
+    photos: [
+      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1557872943-16a5ac26587e?w=400&h=300&fit=crop",
+    ],
   },
 
   // Day 4 - 신치토세 공항
@@ -288,6 +342,12 @@ export const places: Place[] = [
     ],
     recommendation_reason: "신치토세 공항 3층 라멘 거리. 귀국 전 홋카이도 마지막 식사로 제격. 다양한 홋카이도 라멘 브랜드가 입점해 있어 취향대로 선택 가능.",
     opening_hours: ["매일 10:00 - 20:00"],
+    location_tags: ["신치토세 공항", "Day 4"],
+    photos: [
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=400&h=300&fit=crop",
+    ],
   },
   {
     id: "place-019",
@@ -307,6 +367,12 @@ export const places: Place[] = [
     recommendation_reason: "홋카이도 대표 초콜릿 브랜드 로이스의 공항 플래그십 스토어. 생초콜릿 제조 과정을 직접 볼 수 있으며 공항 한정 상품도 판매. 귀국 기념품 쇼핑의 필수 코스.",
     opening_hours: ["매일 08:00 - 20:00"],
     website: "https://www.royce.com",
+    location_tags: ["신치토세 공항", "Day 4"],
+    photos: [
+      "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1606312619070-d48b4c652e52?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=300&fit=crop",
+    ],
   },
 ];
 
@@ -319,7 +385,7 @@ export const schedules: Schedule[] = [
     order: 1,
     time: "06:20",
     title: "인천공항 제1터미널 집결",
-    description: "이스타항공 D카운터 앞 집결!\n📍 제1터미널 3층 출발층 D카운터\n⚠️ 휴가철 공항 매우 혼잡 — 일찍 도착\n탑승권 수령 → 출국심사 → 탑승구 이동",
+    description: "📍 3층 출발층 D카운터 (이스타항공)\n⚠️ 휴가철 공항 매우 혼잡 — 일찍 도착\n탑승권 수령 → 출국심사 → 탑승구 이동",
     category: "이동",
   },
   {
@@ -350,7 +416,7 @@ export const schedules: Schedule[] = [
     order: 4,
     time: "13:00",
     title: "오타루 운하",
-    description: "운하 산책, 가스등·창고 거리 구경\n🚶 평탄한 길 — 어르신도 편하게 산책\n🚗 공항→오타루 약 1시간 20분",
+    description: "운하 산책, 가스등·창고 거리 구경\n🚶 평탄한 길 — 부모님도 편하게 산책\n🚗 공항→오타루 약 1시간 20분",
     category: "관광",
     place_id: "place-002",
   },
@@ -406,7 +472,7 @@ export const schedules: Schedule[] = [
     order: 2,
     time: "12:00",
     title: "나카후라노 호쿠세이산",
-    description: "라벤더 언덕 전망 🏔️\n🚡 리프트 탑승 700엔 · 어르신도 편하게 정상 이동\n정상에서 다이세츠잔 조망",
+    description: "라벤더 언덕 전망 🏔️\n🚡 리프트 탑승 700엔 · 부모님도 편하게 정상 이동\n정상에서 다이세츠잔 조망",
     category: "관광",
     place_id: "place-006",
   },

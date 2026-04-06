@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Map, List, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RestaurantCard } from "@/components/restaurant-card";
@@ -15,14 +15,27 @@ const CATEGORIES: CategoryFilter[] = ["전체", "식당", "카페", "디저트"]
 export default function RestaurantsPage() {
   const [view, setView] = useState<"list" | "map">("list");
   const [filter, setFilter] = useState<CategoryFilter>("전체");
+  const [locationTag, setLocationTag] = useState<string | null>(null);
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
 
   const allRestaurants = getRestaurants();
-  const filteredRestaurants =
-    filter === "전체"
-      ? allRestaurants
-      : allRestaurants.filter((r) => r.category === filter);
+
+  const locationTags = useMemo(() => {
+    const tags = new Set<string>();
+    allRestaurants.forEach((r) => {
+      r.location_tags?.forEach((t) => tags.add(t));
+    });
+    return Array.from(tags);
+  }, [allRestaurants]);
+
+  const filteredRestaurants = useMemo(() => {
+    return allRestaurants.filter((r) => {
+      const categoryMatch = filter === "전체" || r.category === filter;
+      const tagMatch = locationTag === null || (r.location_tags?.includes(locationTag) ?? false);
+      return categoryMatch && tagMatch;
+    });
+  }, [allRestaurants, filter, locationTag]);
 
   function handleCardClick(place: Place) {
     setSelectedPlace(place);
@@ -55,7 +68,7 @@ export default function RestaurantsPage() {
       </div>
 
       {/* Category filter */}
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
@@ -67,6 +80,35 @@ export default function RestaurantsPage() {
             }
           >
             {cat}
+          </button>
+        ))}
+      </div>
+
+      {/* Location tag filter */}
+      <div className="flex flex-wrap gap-2">
+        <button
+          onClick={() => setLocationTag(null)}
+          className={
+            locationTag === null
+              ? "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-transparent text-white"
+              : "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
+          }
+          style={locationTag === null ? { background: "var(--sky, #0ea5e9)" } : {}}
+        >
+          전체 지역
+        </button>
+        {locationTags.map((tag) => (
+          <button
+            key={tag}
+            onClick={() => setLocationTag(locationTag === tag ? null : tag)}
+            className={
+              locationTag === tag
+                ? "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-transparent text-white"
+                : "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
+            }
+            style={locationTag === tag ? { background: "var(--sky, #0ea5e9)" } : {}}
+          >
+            {tag}
           </button>
         ))}
       </div>
