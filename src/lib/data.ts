@@ -1591,6 +1591,197 @@ export const places: Place[] = [
       "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop",
     ],
   },
+
+  // ── Day 1 - 삿포로 시내 (추가 다양성) ──
+
+  {
+    id: "place-075",
+    trip_id: "trip-001",
+    name: "야키토리 모리모토 삿포로 본점 (焼鳥 森本)",
+    address: "Minami 4 Jonishi 3, Chuo-ku, Sapporo 064-0804",
+    lat: 43.0552,
+    lng: 141.3510,
+    category: "식당",
+    rating: 4.4,
+    price_level: 2,
+    main_menu: ["모모(닭다리) 야키토리", "쓰쿠네(닭완자)", "네기마(파닭)", "닭껍질 구이"],
+    key_reviews: [
+      "삿포로 야키토리의 전설! 숯불에 구워 향이 좋고 살이 통통해요. 맥주와 찰떡궁합.",
+      "일본 야키토리를 제대로 경험하고 싶으면 여기. 코스로 시키면 다양한 부위를 맛볼 수 있어요.",
+    ],
+    recommendation_reason: "삿포로 대표 숯불 야키토리 전문점, 홋카이도 닭 사용",
+    opening_hours: ["매일 17:00 - 23:00"],
+    location_tags: ["삿포로 시내", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: "place-076",
+    trip_id: "trip-001",
+    name: "카츠겐 삿포로역점 (かつ源)",
+    address: "Kita 3 Jonishi 4, Chuo-ku, Sapporo 060-0003",
+    lat: 43.0650,
+    lng: 141.3500,
+    category: "식당",
+    rating: 4.3,
+    price_level: 2,
+    main_menu: ["히레카츠 정식", "로스카츠 정식", "에비후라이 정식", "카츠동"],
+    key_reviews: [
+      "바삭한 돈카츠에 밥과 된장국이 나오는 정식이 든든해요. 부모님이 좋아하실 스타일!",
+      "소스를 직접 갈아 넣는 재미가 있어요. 양도 많고 가격도 합리적입니다.",
+    ],
+    recommendation_reason: "바삭한 일본식 돈카츠 정식, 든든한 한 끼",
+    opening_hours: ["매일 11:00 - 22:00"],
+    location_tags: ["삿포로 시내", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1554502078-ef0fc409efce?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: "place-077",
+    trip_id: "trip-001",
+    name: "한식당 명동 삿포로점 (韓国料理 明洞)",
+    address: "Minami 5 Jonishi 3, Chuo-ku, Sapporo 064-0805",
+    lat: 43.0540,
+    lng: 141.3505,
+    category: "식당",
+    rating: 4.2,
+    price_level: 2,
+    main_menu: ["돌솥비빔밥", "김치찌개", "불고기 정식", "삼겹살"],
+    key_reviews: [
+      "일식이 질릴 때 찾는 한식당! 된장찌개가 한국에서 먹는 것처럼 구수하고 맛있어요.",
+      "부모님이 일식에 지치셨을 때 딱 좋은 곳. 반찬도 제대로 나오고 밥맛이 좋아요.",
+    ],
+    recommendation_reason: "일식 지칠 때 찾는 삿포로 한식당, 부모님 입맛 저격",
+    opening_hours: ["매일 11:30 - 22:00"],
+    location_tags: ["삿포로 시내", "Day 1"],
+    photos: [
+      "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400&h=300&fit=crop",
+    ],
+  },
+
+  // ── Day 2 - 후라노 (추가 다양성) ──
+
+  {
+    id: "place-078",
+    trip_id: "trip-001",
+    name: "후라노 카레 공방 (ふらのカレー工房)",
+    address: "Asahimachi 1, Furano, Hokkaido 076-0025",
+    lat: 43.3395,
+    lng: 142.3835,
+    category: "식당",
+    rating: 4.3,
+    price_level: 1,
+    main_menu: ["홋카이도 야채 카레", "치킨 카츠카레", "후라노 멜론 카레", "키즈 카레"],
+    key_reviews: [
+      "후라노 현지 야채가 듬뿍 들어간 카레가 정말 맛있어요! 아이들 카레도 따로 있어서 가족 여행에 딱.",
+      "일본 카레 특유의 달콤한 맛에 홋카이도 야채가 더해져서 특별해요. 가성비도 좋습니다.",
+    ],
+    recommendation_reason: "후라노 현지 야채 카레 전문점, 가족 친화적",
+    opening_hours: ["매일 11:00 - 15:00, 17:00 - 20:00"],
+    location_tags: ["후라노", "Day 2"],
+    photos: [
+      "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop",
+    ],
+  },
+
+  // ── Day 3 - 삿포로역 경유 (추가 다양성) ──
+
+  {
+    id: "place-079",
+    trip_id: "trip-001",
+    name: "삿포로역 파스타 카페 프론토 (PRONTO)",
+    address: "Kita 5 Jonishi 2, JR Tower, Sapporo 060-0005",
+    lat: 43.0688,
+    lng: 141.3506,
+    category: "식당",
+    rating: 4.0,
+    price_level: 1,
+    main_menu: ["명란 크림 파스타", "나폴리탄", "카르보나라", "모닝 세트"],
+    key_reviews: [
+      "일식이 질릴 때 간단히 파스타 먹기 좋아요. 삿포로역 안에 있어서 접근성 최고.",
+      "명란 크림 파스타가 일본 특유의 부드러운 맛이에요. 가벼운 식사로 딱 좋습니다.",
+    ],
+    recommendation_reason: "삿포로역 내 가벼운 양식, 일식 지칠 때 대안",
+    opening_hours: ["매일 07:00 - 22:00"],
+    location_tags: ["삿포로역", "Day 3"],
+    photos: [
+      "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: "place-080",
+    trip_id: "trip-001",
+    name: "홋카이도 스프카레 가라쿠 삿포로역점 (GARAKU)",
+    address: "Kita 5 Jonishi 2-1, Sapporo 060-0005",
+    lat: 43.0686,
+    lng: 141.3504,
+    category: "식당",
+    rating: 4.5,
+    price_level: 2,
+    main_menu: ["야채 듬뿍 스프카레", "치킨 레그 스프카레", "라무(양고기) 스프카레"],
+    key_reviews: [
+      "삿포로 스프카레 맛집 중 탑급! 국물이 깊고 향신료가 풍부해서 정말 맛있어요.",
+      "야채가 크고 아삭하게 들어있어서 건강한 느낌. 매운맛 단계 선택 가능해서 아이들도 OK.",
+    ],
+    recommendation_reason: "삿포로 3대 스프카레 맛집, 깊은 향신료 국물",
+    opening_hours: ["매일 11:30 - 21:30 (화요일 휴무)"],
+    location_tags: ["삿포로역", "Day 3"],
+    photos: [
+      "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop",
+    ],
+  },
+
+  // ── Day 3 - 노보리베츠 (추가 다양성) ──
+
+  {
+    id: "place-081",
+    trip_id: "trip-001",
+    name: "온천시장 식당가 (温泉市場)",
+    address: "50 Noboribetsu Onsencho, Noboribetsu 059-0551",
+    lat: 42.4928,
+    lng: 141.1535,
+    category: "식당",
+    rating: 4.1,
+    price_level: 2,
+    main_menu: ["해산물 정식", "카니(게) 라멘", "홋카이도 우동", "아이스크림"],
+    key_reviews: [
+      "온천거리에서 가볍게 한 끼 먹기 좋은 곳. 해산물 정식이 신선하고 맛있어요.",
+      "타키모토칸 체크인 전 점심으로 딱! 따뜻한 우동도 좋고 해산물도 신선합니다.",
+    ],
+    recommendation_reason: "노보리베츠 온천거리 식당가, 다양한 메뉴 선택 가능",
+    opening_hours: ["매일 11:00 - 20:00"],
+    location_tags: ["노보리베츠", "Day 3", "Day 4"],
+    photos: [
+      "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop",
+    ],
+  },
+
+  // ── Day 4 - 신치토세 공항 (추가 다양성) ──
+
+  {
+    id: "place-082",
+    trip_id: "trip-001",
+    name: "삿포로 카리 혼포 신치토세점 (サッポロカリーほんぽ)",
+    address: "New Chitose Airport 3F, Chitose, Hokkaido 066-0012",
+    lat: 42.7757,
+    lng: 141.6919,
+    category: "식당",
+    rating: 4.2,
+    price_level: 1,
+    main_menu: ["홋카이도 야채 스프카레", "치킨 스프카레", "에비 스프카레"],
+    key_reviews: [
+      "공항에서 마지막으로 먹는 스프카레! 라멘 대신 색다른 선택으로 좋아요.",
+      "야채가 크고 국물이 깊어서 만족스러워요. 비행기 타기 전 든든한 한 끼.",
+    ],
+    recommendation_reason: "신치토세 공항 스프카레, 라멘 대신 색다른 선택",
+    opening_hours: ["매일 10:30 - 20:30"],
+    location_tags: ["신치토세 공항", "Day 4"],
+    photos: [
+      "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop",
+    ],
+  },
 ];
 
 export const schedules: Schedule[] = [
